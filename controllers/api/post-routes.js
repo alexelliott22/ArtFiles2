@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const { Post, User} = require('../../models');
+const { Artwork, Museum, Artist} = require('../../models');
 
 // get all posts
 router.get('/', (req, res) => {
-    Post.findAll({
+    Artwork.findAll({
       attributes: [
         'id',
         'title',
@@ -16,8 +16,12 @@ router.get('/', (req, res) => {
       ],
       include: [
         {
-          model: User,
+          model: Museum,
           attributes: ['username']
+        },
+        {
+          model: Artist,
+          attributes: 'artist_name'
         }
       ]
     })
@@ -30,7 +34,7 @@ router.get('/', (req, res) => {
 
 //get individual post
 router.get('/:id', (req, res) => {
-    Post.findOne({
+    Artwork.findOne({
       where: {
         id: req.params.id
       },
@@ -46,8 +50,12 @@ router.get('/:id', (req, res) => {
       ],
       include: [
         {
-          model: User,
+          model: Museum,
           attributes: ['username']
+        },
+        {
+          model: Artist,
+          attributes: 'artist_name'
         }
       ]
     })
@@ -66,7 +74,7 @@ router.get('/:id', (req, res) => {
 
 //create new post
 router.post('/', (req, res) => {
-    Post.create({
+    Artwork.create({
       title: req.body.title,
       medium: req.body.medium,
       artist_name: req.body.artist_name,
@@ -85,7 +93,7 @@ router.post('/', (req, res) => {
 
 //edit post
 router.put('/:id', (req, res) => {
-    Post.update(
+    Artwork.update(
       {
         location: req.body.location
       },
@@ -110,7 +118,7 @@ router.put('/:id', (req, res) => {
 
 //delete post
 router.delete('/:id', (req, res) => {
-    Post.destroy({
+    Artwork.destroy({
       where: {
         id: req.params.id
       }

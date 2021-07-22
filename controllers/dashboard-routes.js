@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const { Post, User} = require('../models');
+const { Artwork, Museum, Artist} = require('../models');
 
 //get all posts for an individual user
 router.get('/', (req, res) => {
-    Post.findAll({
+    Artwork.findAll({
       where: {
         user_id: req.session.user_id
       },
@@ -19,8 +19,12 @@ router.get('/', (req, res) => {
       ],
       include: [
         {
-          model: User,
+          model: Museum,
           attributes: ['username']
+        },
+        {
+            model: Artist,
+            attributes: 'artist_name'
         }
       ]
     })
@@ -37,7 +41,7 @@ router.get('/', (req, res) => {
 
 //this route gives the user the ability to edit a post
 router.get('/edit/:id', (req, res) => {
-    Post.findOne({
+    Artwork.findOne({
       where: {
         id: req.params.id
       },
@@ -53,8 +57,12 @@ router.get('/edit/:id', (req, res) => {
       ],
       include: [
         {
-          model: User,
+          model: Museum,
           attributes: ['username']
+        },
+        {
+          model: Artist,
+          attributes: 'artist_name'
         }
       ]
     })
