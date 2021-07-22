@@ -7,7 +7,8 @@ router.get('/', (req, res) => {
       attributes: [
         'id',
         'artist_name',
-        'birth_death'
+        'birth_date',
+        'death_date'
       ]
     })
       .then(dbPostData => res.json(dbPostData))
@@ -26,7 +27,8 @@ router.get('/:id', (req, res) => {
       attributes: [
         'id',
         'artist_name',
-        'birth_death'
+        'birth_date',
+        'death_date'
       ]
     })
       .then(dbPostData => {
@@ -43,10 +45,11 @@ router.get('/:id', (req, res) => {
 });
 
 //create new artist
-router.post('/', (req, res) => {
-    Artist.create({
+router.post('/', (req, res) => { 
+  Artist.create({
       artist_name: req.body.artist_name,
-      birth_death: req.body.birth_death
+      birth_date: req.body.birth_date,
+      death_date: req.body.death_date
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {

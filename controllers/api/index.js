@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-const museumRoutes = require('./user-routes');
-const artworkRoutes = require('./post-routes');
+const museumRoutes = require('./museum-routes');
+const artworkRoutes = require('./artwork-routes');
 const artistRoutes = require('./artist-routes');
 
 router.use('/users', museumRoutes);
