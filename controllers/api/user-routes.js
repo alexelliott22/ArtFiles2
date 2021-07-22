@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const {User, Post, museums} = require('../..models');
+const {Artwork, Museum, Artist} = require('../../models');
 
 //get all users
 router.get('/', (req, res) => {
-    User.findAll({
+    Museum.findAll({
         attributes: {exclude: ['password']}
     })
     .then(dbUserData => res.json(dbUserData))
@@ -14,15 +14,21 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    User.findOne({
+    Museum.findOne({
         attributes: {exclude: ['password']},
         where: {
             id: req.params.id
         },
         include: [
             {
-                model: Post,
-                attributes: ['id', 'title', 'date', 'style', 'location', 'artist_name']
+                model: Artwork,
+                attributes: ['id', 'title', 'date', 'style', 'location', 'artist_name'],
+                include: [
+                    {
+                        model: Artist,
+                        attributes: 'artist_name'
+                    }
+                ]
             }
         ]
     })
@@ -41,7 +47,7 @@ router.get('/:id', (req, res) => {
 
 //create a new user
 router.post('/', (req, res) => {
-    User.create({
+    Museum.create({
         username: req.body.username,
         email: req.body.email,
         password: req.body.password
@@ -63,7 +69,7 @@ router.post('/', (req, res) => {
 
 //user logs in
 router.post('/login', (req, res) => {
-    User.findOne({
+    Museum.findOne({
         where: {
             username: req.body.username
         }
@@ -109,7 +115,7 @@ router.post('/logout', (req, res) => {
 //update user
 router.put('/:id', (req, res) => {
     // pass in req.body instead to only update what's passed through
-    User.update(req.body, {
+    Museum.update(req.body, {
       individualHooks: true,
       where: {
         id: req.params.id
@@ -130,7 +136,7 @@ router.put('/:id', (req, res) => {
 
 //delete user
 router.delete('/:id', (req, res) => {
-    User.destroy({
+    Museum.destroy({
       where: {
         id: req.params.id
       }
