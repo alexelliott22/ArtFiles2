@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const {Post, User} = require('../models');
+const {Artwork, Museum, Artist} = require('../models');
 
 // get all posts
 router.get('/', (req, res) => {
-    Post.findAll({
+    Artwork.findAll({
         attributes: [
             'id',
             'title',
@@ -16,8 +16,12 @@ router.get('/', (req, res) => {
         ],
         include: [
             {
-                model: User,
+                model: Museum,
                 attributes: ['username']
+            },
+            {
+                model: Artist,
+                attributes: 'artist_name'
             }
         ]
     })
@@ -45,7 +49,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/post/:id', (req, res) => {
-    Post.findOne({
+    Artwork.findOne({
         where: {
           id: req.params.id
         },
@@ -61,8 +65,12 @@ router.get('/post/:id', (req, res) => {
         ],
         include: [
           {
-            model: User,
+            model: Museum,
             attributes: ['username']
+          },
+          {
+              model: Artist,
+              attributes: 'artist_name'
           }
         ]
     })
