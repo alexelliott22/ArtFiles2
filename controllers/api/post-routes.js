@@ -11,8 +11,7 @@ router.get('/', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location',
-        'artist_name'
+        'location'
       ],
       include: [
         {
@@ -32,7 +31,7 @@ router.get('/', (req, res) => {
     });
 });
 
-//get individual post
+//get individual artwork
 router.get('/:id', (req, res) => {
     Artwork.findOne({
       where: {
@@ -45,8 +44,7 @@ router.get('/:id', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location',
-        'artist_name'
+        'location'
       ],
       include: [
         {
@@ -72,12 +70,11 @@ router.get('/:id', (req, res) => {
     });
 });
 
-//create new post
+//create new artwork
 router.post('/', (req, res) => {
     Artwork.create({
       title: req.body.title,
       medium: req.body.medium,
-      artist_name: req.body.artist_name,
       date: req.body.date,
       style: req.body.style,
       location: req.body.location,
@@ -91,7 +88,7 @@ router.post('/', (req, res) => {
     });
 });
 
-//edit post
+//edit artwork
 router.put('/:id', (req, res) => {
     Artwork.update(
       {
@@ -116,7 +113,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
-//delete post
+//delete artwork
 router.delete('/:id', (req, res) => {
     Artwork.destroy({
       where: {

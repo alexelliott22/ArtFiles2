@@ -14,8 +14,7 @@ router.get('/', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location',
-        'artist_name'
+        'location'
       ],
       include: [
         {
@@ -52,8 +51,7 @@ router.get('/edit/:id', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location',
-        'artist_name'
+        'location'
       ],
       include: [
         {
