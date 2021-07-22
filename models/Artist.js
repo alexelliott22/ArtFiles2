@@ -15,7 +15,11 @@ Artist.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        birth_death: {
+        birth_date: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        death_date: {
             type: DataTypes.STRING,
             allowNull: true
         }
