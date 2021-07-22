@@ -12,7 +12,7 @@ Artwork.belongsTo(Museum, {
 
 });
 
-Artwork.hasOne(Artist, {
+Artwork.belongsTo(Artist, {
     foreignKey: 'artist_id',
     onDelete: 'SET NULL'  
 });

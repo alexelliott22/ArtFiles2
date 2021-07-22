@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
         },
         {
           model: Artist,
-          attributes: 'artist_name'
+          attributes: ['artist_name']
         }
       ]
     })
@@ -53,7 +53,7 @@ router.get('/:id', (req, res) => {
         },
         {
           model: Artist,
-          attributes: 'artist_name'
+          attributes: ['artist_name']
         }
       ]
     })
@@ -78,7 +78,8 @@ router.post('/', (req, res) => {
       date: req.body.date,
       style: req.body.style,
       location: req.body.location,
-      user_id: req.session.user_id
+      museum_id: req.session.museum_id,
+      artist_id: req.body.artist_id
 
     })
       .then(dbPostData => res.json(dbPostData))
