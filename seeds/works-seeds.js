@@ -1,4 +1,4 @@
-const { Artwork} = require();
+const { Artwork} = require('../models/Artwork');
 
 const artData = [
 

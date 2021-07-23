@@ -1,4 +1,4 @@
-const { Museum } = require('./');
+const { Museum } = require('../models/Museum');
 
 const museumData = [
 

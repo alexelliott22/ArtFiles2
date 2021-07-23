@@ -1,4 +1,4 @@
-const {artist} = require();
+const {Artist} = require('../models/Artist');
 
 const artistData = [
 
