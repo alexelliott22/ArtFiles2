@@ -1,4 +1,4 @@
-const { Museum } = require('../models/Museum');
+const { Museum } = require('../models');
 
 const museumData = [
 
@@ -18,12 +18,12 @@ const museumData = [
     password: 'password333'
 },
 {
-    name: 'The Louvre',
+    username: 'The Louvre',
     email: 'curator@louvre.fr',
     password: 'password444'
 },
 {
-    name: 'The Courtauld Gallery',
+    username: 'The Courtauld Gallery',
     email: 'curator@courtauld.uk',
     password: 'password555'
 },
