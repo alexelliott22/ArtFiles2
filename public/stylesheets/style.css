@@ -1,0 +1,14 @@
+:root {
+    --primary: #22333b;
+    --secondary: #eae0d5;
+    --tertiary: #5e503f;
+    --quaternary: #8c7503;
+    --light: #ffffff;
+    --dark: #0a0908;
+    --border-radius: 0.3rem;
+    --spacing-one: calc(1rem * 0.25);
+    --spacing-two: calc(1rem * 0.5);
+    --spacing-three: 1rem;
+    --spacing-four: calc(1rem * 1.5);
+    --spacing-five: calc(1rem * 3);
+}
