@@ -23,7 +23,13 @@
             </nav>
         </header>
         <main>
-            {{{ body }}}
+            <!--{{{ body }}}-->
+            <div>
+            {{#each posts as |post|}}
+            <h2>{{post.title}}</h2>
+            <h4>{{post.medium}}</h4>
+            {{/each}}
+            </div>
         </main>
         <footer>
             Thanks for visiting!
