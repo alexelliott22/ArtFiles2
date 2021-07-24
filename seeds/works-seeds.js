@@ -1,4 +1,4 @@
-const { Artwork} = require('../models/Artwork');
+const { Artwork} = require('../models');
 
 const artData = [
 
@@ -8,7 +8,9 @@ const artData = [
     medium: 'oil on canvas',
     date: '1882',
     style: 'Impressionism',
-    location: 'Courtauld Gallery, London, UK'
+    location: 'Courtauld Gallery, London, UK',
+    artist_id: 1,
+    museum_id: 1
 },
 {
     artist_name: 'Paul Cezanne',
@@ -16,7 +18,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1892',
     style: 'Post-Impressionism',
-    location: 'Courtauld Gallery, London, UK'
+    location: 'Courtauld Gallery, London, UK',
+    artist_id: 2
 },   
 {
     artist_name: 'Peter Paul Rubens',

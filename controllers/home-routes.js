@@ -4,32 +4,31 @@ const { Artwork, Museum, Artist } = require('../models');
 // get all posts
 router.get('/', (req, res) => {
     Artwork.findAll({
-        attributes: [
-            'id',
-            'title',
-            'medium',
-            'created_at',
-            'date',
-            'style',
-            'location',
-            'artist_name'
-        ],
-        include: [
-            {
-                model: Museum,
-                attributes: ['username']
-            },
-            {
-                model: Artist,
-                attributes: 'artist_name'
-            }
-        ]
+        // attributes: [
+        //     'id',
+        //     'title',
+        //     'medium',
+        //     'created_at',
+        //     'date',
+        //     'style',
+        //     'location'
+        // ],
+        // include: [
+        //     {
+        //         model: Museum,
+        //         attributes: ['username']
+        //     },
+        //     {
+        //         model: Artist,
+        //         attributes: 'artist_name'
+        //     }
+        // ]
     })
         .then(dbPostData => {
             //pass a single post object into the homepage
             const posts = dbPostData.map(post => post.get({ plain: true }))
             res.render('homepage', {
-                posts,
+                posts: posts,
                 loggedIn: req.session.loggedIn
             });
         })

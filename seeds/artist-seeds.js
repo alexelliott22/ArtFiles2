@@ -1,9 +1,9 @@
-const {Artist} = require('../models/Artist');
+const {Artist} = require('../models')
 
 const artistData = [
 
 {
-    artist_name: 'Eugène Delacroix',
+    artist_name: 'Edouard Manet',
     birth_date: '1798',
     death_date: '1863'
 
@@ -12,7 +12,7 @@ const artistData = [
 
 
 {   
-    artist_name: 'Marie-Guillemine Benoist',
+    artist_name: 'Paul Cezanne,',
     birth_date: '1768',
     death_date: '1826'
 
@@ -172,5 +172,8 @@ const artistData = [
 
 } 
 
+];
 
-]
+const seedArtists = () => Artist.bulkCreate(artistData);
+
+module.exports = seedArtists;

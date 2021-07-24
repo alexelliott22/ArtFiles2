@@ -20,7 +20,7 @@ Artwork.init(
             allowNull: false
         },
         date: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false
         },
         style: {
