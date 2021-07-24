@@ -24,12 +24,19 @@
         </header>
         <main>
             <!--{{{ body }}}-->
+
             <div>
-            {{#each posts as |post|}}
-            <h2>{{post.title}}</h2>
-            <h4>{{post.medium}}</h4>
-            {{/each}}
+                {{#each posts as |post|}}
+                <h2>{{post.title}}</h2>
+                <h3>{{post.artist_name}}</h3>
+                <h4>{{post.medium}}</h4>
+                <h4>{{post.date}}</h4>
+                <h4>{{post.style}}</h4>
+                <h4>{{post.location}}</h4>
+                {{/each}}
             </div>
+
+
         </main>
         <footer>
             Thanks for visiting!
