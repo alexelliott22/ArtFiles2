@@ -1,26 +1,41 @@
 async function loginFormHandler(event) {
     event.preventDefault();
-
+// const loginFormHandler = async function(event) {
+    // event.preventDefault();
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
-    if (email && password) {
-        const response = await fetch('/api/museum/login', {
+    // if (email && password) {
+        fetch('/api/museum/login', {
             method: 'post',
             body: JSON.stringify({
                 email,
                 password
             }),
             headers: { 'Content-Type': 'application/json' }
-        });
-
-        if (response.ok) {
+        })
+        .then(function() {
             document.location.replace('/');
-        } else {
-            alert(response.statusText);
+        })
+        .catch(err => console.log(err))
         }
-    }
-}
+        
+    //     const response = await fetch('/api/museum/login', {
+    //         method: 'post',
+    //         body: JSON.stringify({
+    //             email,
+    //             password
+    //         }),
+    //         headers: { 'Content-Type': 'application/json' }
+    //     });
+
+    //     if (response.ok) {
+    //         document.location.replace('/');
+    //     } else {
+    //         alert(response.statusText);
+    //     }
+    // }
+// }
 
 async function signupFormHandler(event) {
     event.preventDefault();
