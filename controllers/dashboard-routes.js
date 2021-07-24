@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
         },
         {
             model: Artist,
-            attributes: 'artist_name'
+            attributes: ['artist_name']
         }
       ]
     })
@@ -60,7 +60,7 @@ router.get('/edit/:id', (req, res) => {
         },
         {
           model: Artist,
-          attributes: 'artist_name'
+          attributes: ['artist_name']
         }
       ]
     })
