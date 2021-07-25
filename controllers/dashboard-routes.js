@@ -4,6 +4,7 @@ const { Artwork, Museum, Artist} = require('../models');
 //get all posts for an individual user
 router.get('/', (req, res) => {
     Artwork.findAll({
+<<<<<<< HEAD
       where: {
         user_id: req.session.user_id
       },
@@ -26,11 +27,37 @@ router.get('/', (req, res) => {
             attributes: ['artist_name']
         }
       ]
+=======
+      //COMMENTED OUT SECTION SO I COULD TEST W/O AUTHENTICATION
+      // where: {
+      //   user_id: req.session.user_id
+      // },
+      // attributes: [
+      //   'id',
+      //   'title',
+      //   'medium',
+      //   'created_at',
+      //   'date',
+      //   'style',
+      //   'location'
+      // ],
+      // include: [
+      //   {
+      //     model: Museum,
+      //     attributes: ['username']
+
+      //   },
+      //   {
+      //       model: Artist,
+      //       attributes: 'artist_name'
+      //   }
+      // ]
+>>>>>>> main
     })
     .then(dbPostData => {
         // serialize data before passing to template
         const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('dashboard', { posts, loggedIn: true });
+        res.render('artwork-dashboard', { posts, loggedIn: true, layout: 'dashboard'});
     })
     .catch(err => {
         console.log('failed to get posts');

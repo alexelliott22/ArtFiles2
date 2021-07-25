@@ -1,15 +1,13 @@
-async function loginFormHandler(event) {
+const loginFormHandler = async function(event) {
     event.preventDefault();
-// const loginFormHandler = async function(event) {
-    // event.preventDefault();
-    const email = document.querySelector('#email-login').value.trim();
+    const username = document.querySelector('#username-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
-    // if (email && password) {
+        if (username && password) {
         fetch('/api/museum/login', {
             method: 'post',
             body: JSON.stringify({
-                email,
+                username,
                 password
             }),
             headers: { 'Content-Type': 'application/json' }
@@ -19,6 +17,7 @@ async function loginFormHandler(event) {
         })
         .catch(err => console.log(err))
         }
+    }
         
     //     const response = await fetch('/api/museum/login', {
     //         method: 'post',

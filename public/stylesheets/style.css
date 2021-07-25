@@ -90,9 +90,13 @@ a {
 
 header {
     background-color: var(--primary);
-    background-image: url('/Users/j_lindsey/Desktop/projects/assets/HDRart.png');
+    background-image: url('../assets/StateofART.png');
     background-size: cover;
     background-blend-mode: screen;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto; 
 }
 
 .catalog {
