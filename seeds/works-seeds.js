@@ -10,7 +10,7 @@ const artData = [
     style: 'Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 1,
-    museum_id: 1
+    museum_id: 4
 },
 {
     artist_name: 'Paul Cezanne',
@@ -27,7 +27,8 @@ const artData = [
     medium: 'oil on panel',
     date: '1672',
     style: 'Baroque',
-    location: 'Courtauld Gallery, London, UK'
+    location: 'Courtauld Gallery, London, UK',
+    artist_id: 3
 },
 {
     artist_name: 'Edgar Degas',
@@ -35,7 +36,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1870',
     style: 'Impressionism',
-    location: 'Courtauld Gallery, London, UK'
+    location: 'Courtauld Gallery, London, UK',
+    artist_id: 4
 },
 {
     artist_name: 'Vincent Van Gogh',
@@ -43,7 +45,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1889',
     style: 'Post-Impressionism',
-    location: 'Courtauld Gallery, London, UK'
+    location: 'Courtauld Gallery, London, UK',
+    artist_id: 5,
 },
 {
     artist_name: 'Elizabeth Vigee-LeBrun',
@@ -51,7 +54,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1786',
     style: 'Rococo',
-    location: 'Louvre, Paris, France'
+    location: 'Louvre, Paris, France',
+    artist_id: 6
 },
 {
     artist_name: 'Leonardo da Vinci',
@@ -59,7 +63,8 @@ const artData = [
     medium: 'oil on wood panel',
     date: '1519',
     style: 'High Renaissance',
-    location: 'Louvre, Paris, France'
+    location: 'Louvre, Paris, France',
+    artist_id: 7
 },
 {
     artist_name: 'Unknown',
@@ -67,7 +72,8 @@ const artData = [
     medium: 'marble',
     date: '130 BCE',
     style: 'Classic Antiquity',
-    location: 'Louvre, Paris, France'
+    location: 'Louvre, Paris, France',
+    artist_id: 34
 },
 {
     artist_name: 'Unknown',
@@ -75,7 +81,8 @@ const artData = [
     medium: 'rose granite',
     date: '2600 BC',
     style: 'Egyptian',
-    location: 'Louvre, Paris, France'
+    location: 'Louvre, Paris, France',
+    artist_id: 34
 },
 {
     artist_name: 'Jacques-Louis David',
@@ -83,7 +90,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1786',
     style: 'Neo-Classicism',
-    location: 'Louvre, Paris, France'
+    location: 'Louvre, Paris, France',
+    artist_id: 8
 },
 {
     artist_name: 'James Abbott McNeill Whistler',
@@ -91,7 +99,8 @@ const artData = [
     medium: 'lithotint',
     date: '1878',
     style: 'Aesthetic Movement',
-    location: 'The Metropolitan Museum of Art, NY, NY'
+    location: 'The Metropolitan Museum of Art, NY, NY',
+    artist_id: 9
 },
 {
     artist_name: 'George Bellows',
@@ -99,7 +108,8 @@ const artData = [
     medium: 'lithographic crayon on paper',
     date: '1923',
     style: 'Ash Can School',
-    location: 'The Metropolitan Museum of Art, NY, NY'
+    location: 'The Metropolitan Museum of Art, NY, NY',
+    artist_id: 10
 },
 {
     artist_name: 'Rembranst van Rijn',
@@ -107,7 +117,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1653',
     style: 'Dutch Golden Age',
-    location: 'The Metropolitan Museum of Art, NY, NY'
+    location: 'The Metropolitan Museum of Art, NY, NY',
+    artist_id: 11
 },
 {
     artist_name: 'Winslow Homer',
@@ -115,7 +126,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1889',
     style: 'Naturalism',
-    location: 'The Metropolitan Museum of Art'
+    location: 'The Metropolitan Museum of Art',
+    artist_id: 12
 },
 {
     artist_name: 'Jacque-Louis David',
@@ -123,7 +135,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1787',
     style: 'Neo-Classical',
-    location: 'The Metropolitan Museum of Art'
+    location: 'The Metropolitan Museum of Art',
+    artist_id: 8
 },
 {
     artist_name: 'Edward Hopper',
@@ -131,7 +144,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1942',
     style: 'Realist',
-    location: 'The Art Institute of Chicago'
+    location: 'The Art Institute of Chicago',
+    artist_id: 13
 },
 {
     artist_name: 'Pablo Picasso',
@@ -139,7 +153,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1932',
     style: 'Cubism',
-    location: 'MOMA'
+    location: 'MOMA',
+    artist_id: 14
 },
 {
     artist_name: 'Vincent Van Gogh',
@@ -147,7 +162,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1912',
     style: 'Post-Impressionism',
-    location: 'MOMA'
+    location: 'MOMA',
+    artist_id: 5
 },
 {
     artist_name: 'Salvador Dali',
@@ -155,7 +171,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1931',
     style: 'Surrealism',
-    location: 'MOMA'
+    location: 'MOMA',
+    artist_id: 15
 },
 {
     artist_name: 'Roy Lichtenstein',
@@ -163,7 +180,8 @@ const artData = [
     medium: 'oil on acrylic',
     date: '1963',
     style: 'Pop Art',
-    location: 'MOMA'
+    location: 'MOMA',
+    artist_id: 16
 },
 {
     artist_name: 'Hans Holbein the Younger',
@@ -171,7 +189,8 @@ const artData = [
     medium: 'oil on oak',
     date: '1533',
     style: 'Northern Renaissance',
-    location: 'National Gallery of Art, London'
+    location: 'National Gallery of Art, London',
+    artist_id: 17
 },
 {
     artist_name: 'Leonardo da Vinci',
@@ -179,7 +198,8 @@ const artData = [
     medium: 'oil on panel',
     date: '1483-1486',
     style: 'Renaissance',
-    location: 'National Gallery of Art, London'
+    location: 'National Gallery of Art, London',
+    artist_id: 7
 },
 {
     artist_name: 'Rembrandt',
@@ -187,7 +207,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1640',
     style: 'Dutch Golden Age',
-    location: 'National Gallery of Art, London'
+    location: 'National Gallery of Art, London',
+    artist_id: 11
 },
 {
     artist_name: 'Jan van Eyck',
@@ -195,7 +216,8 @@ const artData = [
     medium: 'oil on oak panel',
     date: '1434',
     style: 'Northern Renaissance',
-    location: 'National Gallery of Art, London'
+    location: 'National Gallery of Art, London',
+    artist_id: 18
 },
 {
     artist_name: 'J. M. W. Turner',
@@ -203,7 +225,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1839',
     style: 'Romanticism',
-    location: 'National Gallery of Art, London'
+    location: 'National Gallery of Art, London',
+    artist_id: 19
 },
 {
     artist_name: 'Pablo Picasso',
@@ -211,7 +234,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1937',
     style: 'Cubism, Surrealism',
-    location:'Museo Reina Sofia, Madrid, Spain'
+    location:'Museo Reina Sofia, Madrid, Spain',
+    artist_id: 14
 },
 {
     artist_name: 'Michelangelo',
@@ -219,7 +243,8 @@ const artData = [
     medium: 'marble sculpture',
     date: '1504',
     style: 'Renaissance',
-    location: 'Galleria dell Accademia, Florence, Italy'
+    location: 'Galleria dell Accademia, Florence, Italy',
+    artist_id: 20
 },
 {
     artist_name: 'Sandro Botticelli',
@@ -227,7 +252,8 @@ const artData = [
     medium: 'oil on panel',
     date: '1485',
     style: 'Renaissance',
-    location: 'Uffizi, Florence, Italy'
+    location: 'Uffizi, Florence, Italy',
+    artist_id: 21
 },
 {
     artist_name: 'Rafael',
@@ -235,7 +261,8 @@ const artData = [
     medium: 'fresco',
     date: '1511',
     style: 'Renaissance',
-    location: 'Vatican Museum, Rome, Italy'
+    location: 'Vatican Museum, Rome, Italy',
+    artist_id: 22
 },
 {
     artist_name: 'Artemisia Gentelleschi',
@@ -243,7 +270,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1612',
     style: 'Renaissance',
-    location: 'Museum Capodimonte, Naples, Italy'
+    location: 'Museum Capodimonte, Naples, Italy',
+    artist_id: 23
 },
 {
     artist_name: 'William Bourgereau',
@@ -251,7 +279,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1873',
     style: 'Accademic',
-    location: 'Clark Art Institute, Williamstown, MA'
+    location: 'Clark Art Institute, Williamstown, MA',
+    artist_id: 24
 },
 {
     artist_name: 'Jacob Lawrence',
@@ -259,7 +288,8 @@ const artData = [
     medium: 'casein tempura on hardboard',
     date: '1940',
     style: 'Harlem Renaissance',
-    location: 'MOMA'
+    location: 'MOMA',
+    artist_id: 25
 },
 {
     artist_name: 'Edward Hopper',
@@ -267,7 +297,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1940',
     style: 'Realist',
-    location: 'MOMA'
+    location: 'MOMA',
+    artist_id: 13
 },
 {
     artist_name: 'Gustave Courbet',
@@ -275,7 +306,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1843',
     style: 'Romanticism',
-    location: 'Private Collection'
+    location: 'Private Collection',
+    artist_id: 26
 },
 {
     artist_name: 'Gustave Caillebotte',
@@ -283,7 +315,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1874',
     style: 'Realism',
-    location: 'The Orsay Museum, Paris, France'
+    location: 'The Orsay Museum, Paris, France',
+    artist_id: 27 
 },
 {
     artist_name: 'Sandro Botticelli',
@@ -291,7 +324,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1482',
     style: 'Renaissance',
-    location: 'Uffizi, Florence, Italy'
+    location: 'Uffizi, Florence, Italy',
+    artist_id: 21
 },
 {
     artist_name: 'Rembrandt',
@@ -299,7 +333,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1642',
     style: 'Baroque',
-    location: 'Rijksmuseum, Amsterdam, Netherlands'
+    location: 'Rijksmuseum, Amsterdam, Netherlands',
+    artist_id: 11
 },
 {
     artist_name: 'Vermeer',
@@ -307,7 +342,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1665',
     style: 'Dutch Golden Age',
-    location: 'Rijksmuseum, Amsterdam, Netherlands'
+    location: 'Rijksmuseum, Amsterdam, Netherlands',
+    artist_id: 28 
 },
 {
     artist_name: 'Vincent Van Gogh',
@@ -315,7 +351,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1887',
     style: 'Post-Impressionism',
-    location: 'Rijksmuseum, Amsterdam, Netherlands'
+    location: 'Rijksmuseum, Amsterdam, Netherlands',
+    artist_id: 5
 },
 {
     artist_name: 'Rodin',
@@ -323,7 +360,8 @@ const artData = [
     medium: 'bronze',
     date: '1904',
     style: 'Impressionism',
-    location: 'Rodin Museum, Paris, France'
+    location: 'Rodin Museum, Paris, France',
+    artist_id: 29
 },
 {
     artist_name: 'Thutmose',
@@ -331,7 +369,8 @@ const artData = [
     medium: 'limestone',
     date: '1341',
     style: 'Egyptian',
-    location: 'Neues Museum, Berlin'
+    location: 'Neues Museum, Berlin',
+    artist_id: 30
 },
 {
     artist_name: 'John Singer Sargent',
@@ -339,7 +378,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1884',
     style: 'Realism',
-    location: 'The Metropolitain Museum of Art'
+    location: 'The Metropolitain Museum of Art',
+    artist_id: 31
 },
 {
     artist_name: 'Caravaggio',
@@ -347,7 +387,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1607',
     style: 'Baroque',
-    location: 'Church of San Domenico Maggiore, Naples'
+    location: 'Church of San Domenico Maggiore, Naples',
+    artist_id: 32 
 },
 {
     artist_name: 'Claude Monet',
@@ -355,7 +396,8 @@ const artData = [
     medium: 'oil on canvas',
     date: '1914',
     style: 'Impressionism',
-    location: 'MOMA'
+    location: 'MOMA',
+    artist_id: 33
 },
 ];
 const seedArt = () => Artwork.bulkCreate(artData);
