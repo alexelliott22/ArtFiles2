@@ -248,6 +248,12 @@ const artistData = [
     artist_name: 'Claude Monet',
     birth_date: '1840',
     death_date: '1926' 
+},
+
+{
+    artist_name: 'Unknown',
+    birth_date: 'Unknown',
+    death_date: 'Unknown' 
 }
 
 ];
