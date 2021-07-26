@@ -81,7 +81,7 @@ h6 {
 p {
     font-size: 1.1rem;
     margin-top: 0;
-    color: var(--dark);
+    color: var(--light);
 }
 
 a {
@@ -89,8 +89,7 @@ a {
 }
 
 header {
-    background-color: var(--primary);
-    background-image: url('/public/assets/StateofART.png');
+    background-image: url('../assets/HDRart.png');
     background-size: cover;
     background-blend-mode: screen;
 }
@@ -112,6 +111,10 @@ nav {
 nav a:hover {
     color: var(--secondary);
     background-color: var(--primary);
+}
+
+.navbar-brand {
+  font-family: 'gallery_modernregular';
 }
 
 .page-title {
@@ -138,6 +141,10 @@ nav a:hover {
     color: var(--dark);
     outline: none;
     background-color: var(--secondary);
+}
+
+.btn-outline-secondary {
+  background-color: #8b1b19;
 }
 
 .btn:hover {
@@ -674,7 +681,7 @@ nav a:hover {
   
   .py-3 {
     padding-top: var(--spacing-three);
-    padding-bottom: var(--spacing-three);
+    padding-bottom: 6rem !important;
   }
   
   .py-4 {
