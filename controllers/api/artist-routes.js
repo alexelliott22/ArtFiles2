@@ -11,10 +11,10 @@ router.get('/', (req, res) => {
         'death_date'
       ]
     })
-      .then(dbPostData => res.json(dbPostData))
-      .catch(err => {
-        console.log('Failed to get artists');
-        res.status(500).json(err);
+    .then(dbPostData => res.json(dbPostData))
+    .catch(err => {
+      console.log('Failed to get artists');
+      res.status(500).json(err);
     });
 });
 
@@ -31,16 +31,16 @@ router.get('/:id', (req, res) => {
         'death_date'
       ]
     })
-      .then(dbPostData => {
-        if (!dbPostData) {
-          res.status(404).json({ message: 'No artist found with this id' });
-          return;
-        }
-        res.json(dbPostData);
-      })
-      .catch(err => {
-        console.log('request Failed to get artist by this id');
-        res.status(500).json(err);
+    .then(dbPostData => {
+      if (!dbPostData) {
+        res.status(404).json({ message: 'No artist found with this id' });
+        return;
+      }
+      res.json(dbPostData);
+    })
+    .catch(err => {
+      console.log('request Failed to get artist by this id');
+      res.status(500).json(err);
     });
 });
 
@@ -66,17 +66,17 @@ router.delete('/:id', (req, res) => {
         id: req.params.id
       }
     })
-      .then(dbPostData => {
-        if (!dbPostData) {
-          res.status(404).json({ message: 'No artist found with this id' });
-          return;
-        }
-        res.json(dbPostData);
-      })
-      .catch(err => {
-        console.log('failed to delete artist');
-        res.status(500).json(err);
-    });
+    .then(dbPostData => {
+      if (!dbPostData) {
+        res.status(404).json({ message: 'No artist found with this id' });
+        return;
+      }
+      res.json(dbPostData);
+    })
+    .catch(err => {
+      console.log('failed to delete artist');
+      res.status(500).json(err);
+  });
 });
 
 module.exports = router;

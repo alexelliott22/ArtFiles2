@@ -24,22 +24,23 @@ router.get('/', (req, res) => {
         }
       ]
     })
-      .then(dbPostData => {
-    //     res.json(dbPostData))
-    //   .catch(err => {
-    //     console.log('Failed to get posts');
-    //     res.status(500).json(err);
-    // });
-    const posts = dbPostData.map(post => post.get({ plain: true }))
-            res.render('all-posts', {
-                posts: posts,
-                loggedIn: req.session.loggedIn
-            });
-          })
-          .catch(err => {
-              console.log('Failed to get posts');
-              res.status(500).json(err);
-          })
+    .then(dbPostData => {
+      res.json(dbPostData)
+    })
+    .catch(err => {
+      console.log('Failed to get posts');
+      res.status(500).json(err);
+    });
+    // const posts = dbPostData.map(post => post.get({ plain: true }))
+    //         res.render('all-posts', {
+    //             posts: posts,
+    //             loggedIn: req.session.loggedIn
+    //         });
+    //       })
+    //       .catch(err => {
+    //           console.log('Failed to get posts');
+    //           res.status(500).json(err);
+    //       })
 });
 
 //get individual artwork
@@ -68,16 +69,16 @@ router.get('/:id', (req, res) => {
         }
       ]
     })
-      .then(dbPostData => {
-        if (!dbPostData) {
-          res.status(404).json({ message: 'No post found with this id' });
-          return;
-        }
-        res.json(dbPostData);
-      })
-      .catch(err => {
-        console.log('Failed to get post');
-        res.status(500).json(err);
+    .then(dbPostData => {
+      if (!dbPostData) {
+        res.status(404).json({ message: 'No post found with this id' });
+        return;
+      }
+      res.json(dbPostData);
+    })
+    .catch(err => {
+      console.log('Failed to get post');
+      res.status(500).json(err);
     });
 });
 
@@ -93,10 +94,10 @@ router.post('/', (req, res) => {
       artist_id: req.body.artist_id
 
     })
-      .then(dbPostData => res.json(dbPostData))
-      .catch(err => {
-        console.log('Failed to add post');
-        res.status(500).json(err);
+    .then(dbPostData => res.json(dbPostData))
+    .catch(err => {
+      console.log('Failed to add post');
+      res.status(500).json(err);
     });
 });
 
@@ -112,16 +113,16 @@ router.put('/:id', (req, res) => {
         }
       }
     )
-      .then(dbPostData => {
-        if (!dbPostData) {
-          res.status(404).json({ message: 'No post found with this id' });
-          return;
-        }
-        res.json(dbPostData);
-      })
-      .catch(err => {
-        console.log('Failed to edit post');
-        res.status(500).json(err);
+    .then(dbPostData => {
+      if (!dbPostData) {
+        res.status(404).json({ message: 'No post found with this id' });
+        return;
+      }
+      res.json(dbPostData);
+    })
+    .catch(err => {
+      console.log('Failed to edit post');
+      res.status(500).json(err);
     });
 });
 
@@ -132,16 +133,16 @@ router.delete('/:id', (req, res) => {
         id: req.params.id
       }
     })
-      .then(dbPostData => {
-        if (!dbPostData) {
-          res.status(404).json({ message: 'No post found with this id' });
-          return;
-        }
-        res.json(dbPostData);
-      })
-      .catch(err => {
-        console.log('failed to delete post');
-        res.status(500).json(err);
+    .then(dbPostData => {
+      if (!dbPostData) {
+        res.status(404).json({ message: 'No post found with this id' });
+        return;
+      }
+      res.json(dbPostData);
+    })
+    .catch(err => {
+      console.log('failed to delete post');
+      res.status(500).json(err);
     });
 });
 
