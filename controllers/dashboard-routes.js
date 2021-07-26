@@ -2,36 +2,35 @@ const router = require('express').Router();
 const { Artwork, Museum, Artist} = require('../models');
 
 //get all posts for an individual user
-router.get('/', (req, res) => {
-    Artwork.findAll({
-      //COMMENTED OUT SECTION SO I COULD TEST W/O AUTHENTICATION
-      // where: {
-      //   user_id: req.session.user_id
-      // },
-      // attributes: [
-      //   'id',
-      //   'title',
-      //   'medium',
-      //   'created_at',
-      //   'date',
-      //   'style',
-      //   'location'
-      // ],
-      // include: [
-      //   {
-      //     model: Museum,
-      //     attributes: ['username']
-
-      //   },
-      //   {
-      //       model: Artist,
-      //       attributes: 'artist_name'
-      //   }
-      // ]
+router.get('/', (req, res) => {  
+  Artwork.findAll({
+      where: {
+        museum_id: req.session.user_id
+      },
+      attributes: [
+        'id',
+        'title',
+        'medium',
+        'created_at',
+        'date',
+        'style',
+        'location'
+      ],
+      include: [
+        {
+          model: Museum,
+          attributes: ['username']
+        },
+        {
+            model: Artist,
+            attributes: ['artist_name']
+        }
+      ]
     })
     .then(dbPostData => {
         // serialize data before passing to template
         const posts = dbPostData.map(post => post.get({ plain: true }));
+        
         res.render('artwork-dashboard', { posts, loggedIn: true, layout: 'dashboard'});
     })
     .catch(err => {
@@ -62,7 +61,7 @@ router.get('/edit/:id', (req, res) => {
         },
         {
           model: Artist,
-          attributes: 'artist_name'
+          attributes: ['artist_name']
         }
       ]
     })

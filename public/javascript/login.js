@@ -1,42 +1,34 @@
-const loginFormHandler = async function(event) {
-    event.preventDefault();
-    const username = document.querySelector('#username-login').value.trim();
-    const password = document.querySelector('#password-login').value.trim();
+const loginFormHandler = async (event) => {
+    try { event.preventDefault();
 
-        if (username && password) {
-        fetch('/api/museum/login', {
-            method: 'post',
-            body: JSON.stringify({
-                username,
-                password
-            }),
-            headers: { 'Content-Type': 'application/json' }
-        })
-        .then(function() {
-            document.location.replace('/');
-        })
-        .catch(err => console.log(err))
-        }
+        console.log(event)
+
+        const username = document.querySelector('#username-login').value.trim();
+        const password = document.querySelector('#password-login').value.trim();
+    
+        if(username && password) {
+            const response = await fetch('/api/museum/login', {
+                method: 'post',
+                body: JSON.stringify({
+                    username,
+                    password
+                }),
+                headers: { 'Content-Type': 'application/json' }
+            })
+
+            if(response.ok) {
+                document.location.replace('/dashboard');
+            } else {
+                alert(response.statusText)
+            }
+        }        
+    } catch (error) {
+        console.log(error);
+
     }
-        
-    //     const response = await fetch('/api/museum/login', {
-    //         method: 'post',
-    //         body: JSON.stringify({
-    //             email,
-    //             password
-    //         }),
-    //         headers: { 'Content-Type': 'application/json' }
-    //     });
+}
 
-    //     if (response.ok) {
-    //         document.location.replace('/');
-    //     } else {
-    //         alert(response.statusText);
-    //     }
-    // }
-// }
-
-async function signupFormHandler(event) {
+const createAccount = async (event) => {
     event.preventDefault();
 
     const username = document.querySelector('#username-signup').value.trim();
@@ -61,3 +53,6 @@ async function signupFormHandler(event) {
         }
     }
 }
+
+document.querySelector('.signup-form').addEventListener('submit', createAccount);
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
