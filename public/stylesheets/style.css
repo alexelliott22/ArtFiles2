@@ -90,7 +90,7 @@ a {
 
 header {
     background-color: var(--primary);
-    background-image: url('../assets/StateofART.png');
+    background-image: url('/public/assets/StateofART.png');
     background-size: cover;
     background-blend-mode: screen;
 }

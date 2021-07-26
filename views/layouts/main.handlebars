@@ -14,31 +14,47 @@
 <body>
     <div class="wrapper">
         <header class="py-3 mb-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
+                        <a class="nav-item nav-link" href="#">Dashboard</a>
+                        <a class="nav-item nav-link" href="#">Login</a>
+                        <a class="nav-item nav-link disabled" href="#"></a>
+                    </div>
+                </div>
+            </nav>
             <div class="flex-row justify-space-between align-center container-fluid mx-auto">
                 <h4 class="text-light catalog p-3">Artwork Location Catalog</h4>
             </div>
-            <nav>
+            
+            <div class="container-fluid mx-auto">
+                <section class="p-3 my-4">
+                    <h5 class="text-light">A Guide to finding artwork</h5>
+                    <p>Locate a particular work of art or update the catalog with the location of artwork.
+                    </p>
+                </section>
+            </div>
+        </header>
+        <main class="container-fluid mx-auto">
+            <div class="container-fluid">
                 {{#if loggedIn}}
                 <button id="logout" class="btn-no-style">logout</button>
                 {{else}}
                 <a href="/login"><button type="button" class="btn btn-outline-secondary">Login</button>
                 </a>
                 {{/if}}
-            </nav>
-            <div class="container-fluid mx-auto">
-            <section class="p-3 my-4">
-                <h5 class="text-light">A Guide to finding artwork</h5>
-                <p>Locate a particular work of art or update the catalog with the location of artwork.
-                </p>
-            </section>
-        </div>
-        </header>
-        <main class="container-fluid mx-auto">
+            </div>
 
             {{{ body }}}
 
-
         </main>
+
         <footer>
             Thanks for visiting!
         </footer>
