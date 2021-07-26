@@ -8,30 +8,31 @@ router.get('/', (req, res) => {
       // where: {
       //   user_id: req.session.user_id
       // },
-      // attributes: [
-      //   'id',
-      //   'title',
-      //   'medium',
-      //   'created_at',
-      //   'date',
-      //   'style',
-      //   'location'
-      // ],
-      // include: [
-      //   {
-      //     model: Museum,
-      //     attributes: ['username']
+      attributes: [
+        'id',
+        'title',
+        'medium',
+        'created_at',
+        'date',
+        'style',
+        'location'
+      ],
+      include: [
+        {
+          model: Museum,
+          attributes: ['username']
 
-      //   },
-      //   {
-      //       model: Artist,
-      //       attributes: 'artist_name'
-      //   }
-      // ]
+        },
+        {
+            model: Artist,
+            attributes: ['artist_name']
+        }
+      ]
     })
     .then(dbPostData => {
         // serialize data before passing to template
         const posts = dbPostData.map(post => post.get({ plain: true }));
+        console.log(posts)
         res.render('artwork-dashboard', { posts, loggedIn: true, layout: 'dashboard'});
     })
     .catch(err => {

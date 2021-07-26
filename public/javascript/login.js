@@ -61,3 +61,9 @@ async function signupFormHandler(event) {
         }
     }
 }
+
+var signUpForm = document.querySelector(".signup-form")
+signUpForm.addEventListener("submit", signupFormHandler )
+
+var loginInForm = document.querySelector(".login-form")
+loginInForm.addEventListener("submit", loginFormHandler )
