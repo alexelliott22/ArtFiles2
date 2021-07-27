@@ -1,6 +1,5 @@
 const addArtwork = async (e) => {
     try {
-        console.log('here')
         e.preventDefault();
         
         const artistName = document.querySelector('#artist-name').value.trim();
@@ -39,7 +38,11 @@ const addArtwork = async (e) => {
 }
 
 const getArtistID = async (artistName) => {
-    const artists = await fetch('/api/artist')
+    const response = await fetch('/api/artists', {
+        method: 'get'
+    })
+
+    const artists = await response.json();
 
     artists.filter(artist => {
         if(artist.artist_name == artistName) {
