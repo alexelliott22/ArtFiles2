@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Artwork extends Model {}
+class Artwork extends Model { }
 
 Artwork.init(
     {
@@ -31,7 +31,7 @@ Artwork.init(
             type: DataTypes.STRING,
             allowNull: false,
             primaryKey: true
-        }, 
+        },
         museum_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -46,7 +46,11 @@ Artwork.init(
                 model: 'artist',
                 key: 'id'
             }
-        }
+        },
+        image_url: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
     },
     {
         sequelize,
