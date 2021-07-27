@@ -156,6 +156,15 @@ nav a:hover {
     display: inline;
 }
 
+.login-form {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.username-login, .password-login {
+  padding-bottom: 1rem;
+}
+
   /* CARDS */
 .card {
     margin: 0 0 20px 0;
