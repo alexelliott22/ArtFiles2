@@ -3,10 +3,12 @@ const router = require('express').Router();
 const apiRoutes = require('./api');
 const homeRoutes = require('./home-routes')
 const dashboardRoutes = require('./dashboard-routes')
+const allArtRoutes = require('./all-artwork-routes')
 
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/dashboard', dashboardRoutes)
+router.use('/all-artwork', allArtRoutes);
 
 
 router.use((req, res) => {

@@ -1,7 +1,7 @@
         <section class="p-3 mb-3 bg-dark flex-row align-center">
             <h2 class="text-light col-12 col-lg-5">Add To Our Catalog.</h2>
             <div class="col-12 col-lg-7 flex-row text-center justify-space-around align-center">
-                <a class="btn col-12 col-md-auto mx-2" href="/">View Artwork</a>
+                <a class="btn col-12 col-md-auto mx-2" href="/all-artwork">View Artwork</a>
                 <!-- do we nee another view?<a class="btn col-12 col-md-auto mx-2" href="/zookeepers">View </a>--->
             </div>
         </section>
@@ -29,7 +29,7 @@
                     <input type="text" id="location" name="location" class="form-input" placeholder="Enter Location/Museum">
 
 
-                    <button class="btn">Add Artwork</button>
+                    <button class="btn" id="add-artwork">Add Artwork</button>
                 </form>
             </div>
 
@@ -40,10 +40,15 @@
                     <input type="text" id="artist-name" class="form-input input" placeholder="Enter Name"
                         name="artist-name">
 
-                    <label for="style-input" class="form-label input">Field/Style of Art</label>
-                    <input type="text" id="style-input" class="form-input" placeholder="Enter Field of Art" name="style">
+                    <label for="style-input" class="form-label input">Year of Birth</label>
+                    <input type="text" id="birthDate" class="form-input" placeholder="Enter Year of Birth" name="year_of_birth">
 
-                    <button class="btn">Add Artist</button>
+                    <label for="style-input" class="form-label input">Year of Death</label>
+                    <input type="text" id="deathDate" class="form-input" placeholder="Enter Year of Death" name="year_of_death">
+
+                    <button class="btn" id="add-artist">Add Artist</button>
                 </form>
             </div>
         </section>
+
+        <script src="/javascript/add-artwork.js"></script>
