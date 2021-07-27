@@ -89,10 +89,11 @@ a {
 }
 
 header {
-    background-image: url('../assets/HDRart.png');
+    background-image: url('../assets/LogoHDR.png');
     background-size: cover;
     background-blend-mode: screen;
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto; 
@@ -106,15 +107,24 @@ nav {
     width: 100%;
     margin-top: 10px;
     justify-content: center;
+    display:inline-block;
+    color: white !important;
 }
 
+
+
 nav a:hover {
-    color: var(--secondary);
-    background-color: var(--primary);
+    color: white !important;
+}
+
+a .navbar-brand, .navbar-nav {
+  color: white;
 }
 
 .navbar-brand {
   font-family: 'gallery_modernregular';
+  letter-spacing:0rem;
+  color: white !important;
 }
 
 .page-title {
@@ -145,6 +155,7 @@ nav a:hover {
 
 .btn-outline-secondary {
   background-color: #8b1b19;
+
 }
 
 .btn:hover {
@@ -156,16 +167,26 @@ nav a:hover {
     display: inline;
 }
 
-.login-form {
+.login-form, .signup-form {
   margin: 2rem auto;
   text-align: center;
+  max-width:50%;
 }
 
 .username-login, .password-login {
   padding-bottom: 1rem;
 }
 
-  /* CARDS */
+.username-signup, .password-signup {
+  padding-bottom: 1rem;
+}
+
+.email-signup {
+  padding-bottom: 1rem;
+  text-align:center;
+}
+
+/* CARDS */
 .card {
     margin: 0 0 20px 0;
     border: 3px solid var(--light);
@@ -189,7 +210,7 @@ nav a:hover {
 .form-label,
 .form-input,
 .form-textarea {
-    display: block;
+    display:block;
 }
 
 .form-label {
@@ -204,6 +225,13 @@ nav a:hover {
     font-size: 1.2rem;
     border: 2px solid var(--dark);
     border-radius: var(--border-radius);
+}
+
+/*FOOTER*/
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
 }
 
   /* LAYOUT */
@@ -690,7 +718,7 @@ nav a:hover {
   
   .py-3 {
     padding-top: var(--spacing-three);
-    padding-bottom: 6rem !important;
+    padding-bottom: 9rem !important;
   }
   
   .py-4 {
@@ -759,7 +787,7 @@ nav a:hover {
   }
   
   .bg-light {
-    background-color: var(--light);
+    background-color: rgb(0 0 0 / 67%)!important;
   }
   
   .bg-dark {
