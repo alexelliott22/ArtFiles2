@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const {Artwork, Museum, Artist} = require('../../models');
+const validator = require('email-validator');
 
 //get all users
 router.get('/', (req, res) => {
@@ -55,25 +56,31 @@ router.get('/:id', (req, res) => {
 
 //create a new user
 router.post('/', (req, res) => {
-    Museum.create({
-        name: req.body.name,
-        username: req.body.username,
-        email: req.body.email,
-        password: req.body.password
-    })
-    .then(dbUserData => {
-        req.session.save(() => {
-            req.session.museum_id = dbUserData.id;
-            req.session.username = dbUserData.username;
-            req.session.loggedIn = true;
+    if(validator.validate(req.body.email)) {
 
-            res.json(dbUserData);
-        });
-    })
-    .catch(err => {
-        console.log('Failed to add user');
-        res.status(500).json(err);
-    })
+        Museum.create({
+            name: req.body.name,
+            username: req.body.username,
+            email: req.body.email,
+            password: req.body.password
+        })
+        .then(dbUserData => {
+            req.session.save(() => {
+                req.session.museum_id = dbUserData.id;
+                req.session.username = dbUserData.username;
+                req.session.loggedIn = true;
+    
+                res.json(dbUserData);
+            });
+        })
+        .catch(err => {
+            console.log('Failed to add user');
+            res.status(500).json(err);
+        })
+    } else {
+        console.log('Failed to add user')
+    }
+    
 });
 
 //user logs in
