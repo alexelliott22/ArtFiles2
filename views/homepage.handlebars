@@ -11,22 +11,25 @@
                 <h3 class="text-light">Enter Artwork</h3>
                 <form id="works">
                     <label for="artist-name" class="form-label">Artist Name</label>
-                    <input type="text" id="artist-name" name="artist-name" class="form-input" placeholder="Enter Name">
+                    <input type="text" id="artistName" name="artist-name" class="form-input" placeholder="Enter Name">
 
                     <label for="title-input" class="form-label">Title</label>
-                    <input type="text" id="title-input" name="title" class="form-input" placeholder="Enter Title">
+                    <input type="text" id="artwork-title" name="title" class="form-input" placeholder="Enter Title">
 
                     <label for="medium" class="form-label">Medium</label>
-                    <input type="text" id="medium" name="amedium" class="form-input" placeholder="Enter Medium">
+                    <input type="text" id="artwork-medium" name="amedium" class="form-input" placeholder="Enter Medium">
 
                     <label for="date" class="form-label">Date</label>
-                    <input type="text" id="date" name="date" class="form-input" placeholder="Enter Date for Artwork">
+                    <input type="text" id="artwork-date" name="date" class="form-input" placeholder="Enter Date for Artwork">
 
                     <label for="style" class="form-label">Style</label>
-                    <input type="text" id="style" name="style" class="form-input" placeholder="Enter Style of Art">
+                    <input type="text" id="artwork-style" name="style" class="form-input" placeholder="Enter Style of Art">
 
                     <label for="location" class="form-label">Location</label>
-                    <input type="text" id="location" name="location" class="form-input" placeholder="Enter Location/Museum">
+                    <input type="text" id="artwork-location" name="location" class="form-input" placeholder="Enter Location/Museum">
+
+                    <label for="image" class="form-label">Image URL</label>
+                    <input type="url" name="artwork-image" id="artwork-img" class="form-input" placeholder="https://images.app.goo.gl/J64ky6xTLhJuXR6Y9">
 
 
                     <button class="btn" id="add-artwork">Add Artwork</button>
@@ -37,8 +40,7 @@
                 <h3 class="text-light">Enter an Artist</h3>
                 <form id="artist-form">
                     <label for="artist-name" class="form-label">Artist Name</label>
-                    <input type="text" id="artist-name" class="form-input input" placeholder="Enter Name"
-                        name="artist-name">
+                    <input type="text" id="artistName" class="form-input input" placeholder="Enter Name" name="artist-name">
 
                     <label for="style-input" class="form-label input">Year of Birth</label>
                     <input type="text" id="birthDate" class="form-input" placeholder="Enter Year of Birth" name="year_of_birth">
@@ -52,3 +54,4 @@
         </section>
 
         <script src="/javascript/add-artwork.js"></script>
+        <script src="/javascript/add-artist.js"></script>

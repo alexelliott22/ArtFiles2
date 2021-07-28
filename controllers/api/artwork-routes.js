@@ -11,7 +11,8 @@ router.get('/', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location'
+        'location',
+        'image_url'
       ],
       include: [
         {
@@ -46,7 +47,8 @@ router.get('/:id', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location'
+        'location',
+        'image_url'
       ],
       include: [
         {
@@ -81,7 +83,8 @@ router.post('/', (req, res) => {
       style: req.body.style,
       location: req.body.location,
       museum_id: req.session.museum_id,
-      artist_id: req.body.artist_id
+      artist_id: req.body.artist_id,
+      image_url: req.body.artworkImg
 
     })
     .then(dbPostData => res.json(dbPostData))

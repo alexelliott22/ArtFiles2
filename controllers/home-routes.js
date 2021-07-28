@@ -19,6 +19,7 @@ router.get('/login', async (req, res) => {
             loggedIn: req.session.loggedIn
         })
         
+        
     } catch (error) {
         console.log(error)
     }

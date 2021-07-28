@@ -20,6 +20,10 @@ Museum.init(
             primaryKey: true,
             autoIncrement: true
         },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         //define a username column
         username: {
             type: DataTypes.STRING,

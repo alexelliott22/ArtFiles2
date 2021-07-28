@@ -12,7 +12,7 @@ const artistData = [
 
 
 {   
-    artist_name: 'Paul Cezanne,',
+    artist_name: 'Paul Cezanne',
     birth_date: '1839',
     death_date: '1906'
 

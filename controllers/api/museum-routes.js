@@ -29,7 +29,8 @@ router.get('/:id', (req, res) => {
                 'created_at',
                 'date',
                 'style',
-                'location'],
+                'location',
+                'image_url'],
                 include: [
                     {
                         model: Artist,
@@ -55,13 +56,14 @@ router.get('/:id', (req, res) => {
 //create a new user
 router.post('/', (req, res) => {
     Museum.create({
+        name: req.body.name,
         username: req.body.username,
         email: req.body.email,
         password: req.body.password
     })
     .then(dbUserData => {
         req.session.save(() => {
-            req.session.user_id = dbUserData.id;
+            req.session.museum_id = dbUserData.id;
             req.session.username = dbUserData.username;
             req.session.loggedIn = true;
 
@@ -95,7 +97,7 @@ router.post('/login', (req, res) => {
         }
 
         req.session.save(() => {
-            req.session.user_id = dbUserData.id;
+            req.session.museum_id = dbUserData.id;
             req.session.username = dbUserData.username;
             req.session.loggedIn = true;
         

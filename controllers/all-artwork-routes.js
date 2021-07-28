@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
             'date',
             'style',
             'location',
+            'image_url'
         ],
         include: [
             {
