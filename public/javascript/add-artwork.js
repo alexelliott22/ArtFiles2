@@ -47,13 +47,17 @@ const getArtistID = async (artistName) => {
 
     const artists = await response.json();
 
-    const artistMatch = artists.filter(artist => {
+    const artistMatch = await artists.filter(artist => {
         if(artist.artist_name == artistName) {
             return artist;
         }
     })
 
-    return artistMatch[0].id;
+    if (artistMatch[0]) {
+        return artistMatch[0].id;
+    } else {
+        return null;
+    }
 }
 
 document.querySelector('#add-artwork').addEventListener('click', addArtwork)
