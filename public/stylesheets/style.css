@@ -111,8 +111,6 @@ nav {
     color: white !important;
 }
 
-
-
 nav a:hover {
     color: white !important;
 }
@@ -167,6 +165,16 @@ a .navbar-brand, .navbar-nav {
     display: inline;
 }
 
+#logout {
+  font-size: 1.3rem;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    width: 25%;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
 .login-form, .signup-form {
   margin: 2rem auto;
   text-align: center;
@@ -187,7 +195,18 @@ a .navbar-brand, .navbar-nav {
 }
 
 /* CARDS */
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.card-group {
+  display: inline-block;
+}
+
 .card {
+    display: inline-block;  
     margin: 0 0 20px 0;
     border: 3px solid var(--light);
     border-radius: var(--border-radius);
