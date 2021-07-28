@@ -31,16 +31,6 @@ router.get('/', (req, res) => {
       console.log('Failed to get posts');
       res.status(500).json(err);
     });
-    // const posts = dbPostData.map(post => post.get({ plain: true }))
-    //         res.render('all-posts', {
-    //             posts: posts,
-    //             loggedIn: req.session.loggedIn
-    //         });
-    //       })
-    //       .catch(err => {
-    //           console.log('Failed to get posts');
-    //           res.status(500).json(err);
-    //       })
 });
 
 //get individual artwork
