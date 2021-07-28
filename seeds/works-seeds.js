@@ -161,7 +161,8 @@ const artData = [
     date: '1942',
     style: 'Realist',
     location: 'The Art Institute of Chicago',
-    artist_id: 13
+    artist_id: 13,
+    museum_id: 2
 },
 {
 
@@ -170,7 +171,8 @@ const artData = [
     date: '1932',
     style: 'Cubism',
     location: 'MOMA',
-    artist_id: 14
+    artist_id: 14,
+    museum_id: 2
 },
 {
 
@@ -179,7 +181,8 @@ const artData = [
     date: '1912',
     style: 'Post-Impressionism',
     location: 'MOMA',
-    artist_id: 5
+    artist_id: 5,
+    museum_id: 2
 },
 {
 
@@ -188,7 +191,8 @@ const artData = [
     date: '1931',
     style: 'Surrealism',
     location: 'MOMA',
-    artist_id: 15
+    artist_id: 15,
+    museum_id: 2
 },
 {
 
@@ -197,7 +201,8 @@ const artData = [
     date: '1963',
     style: 'Pop Art',
     location: 'MOMA',
-    artist_id: 16
+    artist_id: 16,
+    museum_id: 2
 },
 {
 
@@ -257,7 +262,8 @@ const artData = [
     date: '1937',
     style: 'Cubism, Surrealism',
     location:'Museo Reina Sofia, Madrid, Spain',
-    artist_id: 14
+    artist_id: 14,
+    museum_id: 2
 },
 {
 
@@ -266,7 +272,8 @@ const artData = [
     date: '1504',
     style: 'Renaissance',
     location: 'Galleria dell Accademia, Florence, Italy',
-    artist_id: 20
+    artist_id: 20,
+    museum_id: 2
 },
 {
 
@@ -275,7 +282,8 @@ const artData = [
     date: '1485',
     style: 'Renaissance',
     location: 'Uffizi, Florence, Italy',
-    artist_id: 21
+    artist_id: 21,
+    museum_id: 2
 },
 {
 
@@ -284,7 +292,8 @@ const artData = [
     date: '1511',
     style: 'Renaissance',
     location: 'Vatican Museum, Rome, Italy',
-    artist_id: 22
+    artist_id: 22,
+    museum_id: 2
 },
 {
 
@@ -293,7 +302,8 @@ const artData = [
     date: '1612',
     style: 'Renaissance',
     location: 'Museum Capodimonte, Naples, Italy',
-    artist_id: 23
+    artist_id: 23,
+    museum_id: 2
 },
 {
 
@@ -302,7 +312,8 @@ const artData = [
     date: '1873',
     style: 'Accademic',
     location: 'Clark Art Institute, Williamstown, MA',
-    artist_id: 24
+    artist_id: 24,
+    museum_id: 3
 },
 {
 
@@ -311,7 +322,8 @@ const artData = [
     date: '1940',
     style: 'Harlem Renaissance',
     location: 'MOMA',
-    artist_id: 25
+    artist_id: 25,
+    museum_id: 3
 },
 {
 
@@ -320,7 +332,8 @@ const artData = [
     date: '1940',
     style: 'Realist',
     location: 'MOMA',
-    artist_id: 13
+    artist_id: 13,
+    museum_id: 3
 },
 {
 
@@ -329,7 +342,8 @@ const artData = [
     date: '1843',
     style: 'Romanticism',
     location: 'Private Collection',
-    artist_id: 26
+    artist_id: 26,
+    museum_id: 3
 },
 {
 
@@ -338,7 +352,8 @@ const artData = [
     date: '1874',
     style: 'Realism',
     location: 'The Orsay Museum, Paris, France',
-    artist_id: 27 
+    artist_id: 27,
+    museum_id: 3
 },
 {
 
@@ -347,7 +362,8 @@ const artData = [
     date: '1482',
     style: 'Renaissance',
     location: 'Uffizi, Florence, Italy',
-    artist_id: 21
+    artist_id: 21,
+    museum_id: 3
 },
 {
 
@@ -356,7 +372,8 @@ const artData = [
     date: '1642',
     style: 'Baroque',
     location: 'Rijksmuseum, Amsterdam, Netherlands',
-    artist_id: 11
+    artist_id: 11,
+    museum_id: 3
 },
 {
 
@@ -365,7 +382,8 @@ const artData = [
     date: '1665',
     style: 'Dutch Golden Age',
     location: 'Rijksmuseum, Amsterdam, Netherlands',
-    artist_id: 28 
+    artist_id: 28,
+    museum_id: 3
 },
 {
 
@@ -374,7 +392,8 @@ const artData = [
     date: '1887',
     style: 'Post-Impressionism',
     location: 'Rijksmuseum, Amsterdam, Netherlands',
-    artist_id: 5
+    artist_id: 5,
+    museum_id: 3
 },
 {
 
@@ -383,7 +402,8 @@ const artData = [
     date: '1904',
     style: 'Impressionism',
     location: 'Rodin Museum, Paris, France',
-    artist_id: 29
+    artist_id: 29,
+    museum_id: 3
 },
 {
 
@@ -392,7 +412,8 @@ const artData = [
     date: '1341',
     style: 'Egyptian',
     location: 'Neues Museum, Berlin',
-    artist_id: 30
+    artist_id: 30,
+    museum_id: 3
 },
 {
 
@@ -401,7 +422,8 @@ const artData = [
     date: '1884',
     style: 'Realism',
     location: 'The Metropolitain Museum of Art',
-    artist_id: 31
+    artist_id: 31,
+    museum_id: 3
 },
 {
 
@@ -410,7 +432,8 @@ const artData = [
     date: '1607',
     style: 'Baroque',
     location: 'Church of San Domenico Maggiore, Naples',
-    artist_id: 32 
+    artist_id: 32,
+    museum_id: 3
 },
 {
 
@@ -419,7 +442,8 @@ const artData = [
     date: '1914',
     style: 'Impressionism',
     location: 'MOMA',
-    artist_id: 33
+    artist_id: 33,
+    museum_id: 3
 },
 ];
 const seedArt = () => Artwork.bulkCreate(artData);
