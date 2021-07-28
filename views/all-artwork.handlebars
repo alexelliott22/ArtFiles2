@@ -1,1 +1,5 @@
-{{>artwork}}
+<div class="art-list">
+    {{#each posts as |post|}}
+    {{>artwork post}}
+    {{/each}}
+</div>
