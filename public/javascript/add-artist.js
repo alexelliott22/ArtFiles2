@@ -1,13 +1,13 @@
-const addArtist = (e) => {
+const addArtist = async (e) => {
     try {
         e.preventDefault();
 
-        const artist_name = document.querySelector('#artist-name').value.trim();
+        const artist_name = document.querySelector('#artistName').value;
         const birth_date = document.querySelector('#birthDate').value.trim();
         const death_date = document.querySelector('#deathDate').value.trim();
 
         if(artist_name) {
-            const response = await fetch('/api/artwork', {
+            const response = await fetch('/api/artists', {
                 method: 'post',
                 body: JSON.stringify({
                     artist_name,
