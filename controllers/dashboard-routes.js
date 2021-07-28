@@ -2,11 +2,12 @@ const router = require('express').Router();
 const { Artwork, Museum, Artist} = require('../models');
 
 //get all posts for an individual user
+// GET /dashboard
 router.get('/', (req, res) => {  
   Artwork.findAll({
-      where: {
-        museum_id: req.session.user_id
-      },
+      // where: {
+      //   museum_id: req.session.user_id
+      // },
       attributes: [
         'id',
         'title',
@@ -14,7 +15,8 @@ router.get('/', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location'
+        'location',
+        'image_url'
       ],
       include: [
         {
@@ -30,8 +32,10 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
         // serialize data before passing to template
         const posts = dbPostData.map(post => post.get({ plain: true }));
+
+        console.log(posts)
     
-        res.render('artwork-dashboard', { posts, loggedIn: true, layout: 'dashboard'});
+        res.render('artwork-dashboard', { posts, loggedIn: true, layout: 'main'});
     })
     .catch(err => {
         console.log('failed to get posts');

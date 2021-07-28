@@ -2,13 +2,10 @@ const router = require('express').Router();
 const { Artwork, Museum, Artist } = require('../models');
 
 // get all posts
-router.get('/', async (req, res) => {
-    try {
-        res.render('homepage')
-        
-    } catch (error) {
-        console.log(error)
-    }
+router.get('/', (req, res) => {
+    res.render('homepage', {
+        loggedIn: req.session.loggedIn
+    })
 });
 
 //login route
@@ -18,7 +15,9 @@ router.get('/login', async (req, res) => {
             res.redirect('/');
             return;
         }
-        res.render('login')
+        res.render('login', {
+            loggedIn: req.session.loggedIn
+        })
         
     } catch (error) {
         console.log(error)
@@ -37,7 +36,8 @@ router.get('/artwork/:id', (req, res) => {
             'created_at',
             'date',
             'style',
-            'location'
+            'location',
+            'image_url'
         ],
         include: [
             {

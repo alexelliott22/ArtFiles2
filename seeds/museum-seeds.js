@@ -34,6 +34,14 @@ const museumData = [
 },
 ];
 
-const seedMuseums = () => Museum.bulkCreate(museumData);
+const seedMuseums = () => Museum.bulkCreate(museumData, {
+    individualHooks: true,
+    validate: true
+});
+// const seedMuseums = () => {
+//     museumData.forEach(async(data) => {
+//         await Museum.create(data)
+//     });
+// }
 
 module.exports = seedMuseums;

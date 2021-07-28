@@ -10,7 +10,9 @@ const artData = [
     style: 'Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 1,
-    museum_id: 5
+    museum_id: 5,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg'
+
 },
 {
 
@@ -20,7 +22,8 @@ const artData = [
     style: 'Post-Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 2,
-    museum_id: 5
+    museum_id: 5,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Paul_C%C3%A9zanne%2C_1892-95%2C_Les_joueurs_de_carte_%28The_Card_Players%29%2C_60_x_73_cm%2C_oil_on_canvas%2C_Courtauld_Institute_of_Art%2C_London.jpg'
 },   
 {
 
@@ -30,7 +33,8 @@ const artData = [
     style: 'Baroque',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 3,
-    museum_id: 5
+    museum_id: 5,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Rubens_Landscape_by_moonlight.jpg'
 },
 {
     title: 'Lady with a Parasol',
@@ -39,7 +43,8 @@ const artData = [
     style: 'Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 4,
-    museum_id: 5
+    museum_id: 5,
+    image_url: 'https://2a2ths32b67ktlbny1dkgo1b-wpengine.netdna-ssl.com/aah/wp-content/uploads/sites/2/Edgar-Degas-Lady-with-a-Parasol-1870-72.jpg'
 },
 {
     title: 'Self-Portrait with Bandaged Ear',
@@ -48,7 +53,8 @@ const artData = [
     style: 'Post-Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 5,
-    museum_id: 5
+    museum_id: 5,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vincent_van_Gogh_-_Self-portrait_with_bandaged_ear_%281889%2C_Courtauld_Institute%29.jpg'
 },
 {
     title: 'Madame Vigee-LeBrun and Her Daughter',
@@ -57,7 +63,8 @@ const artData = [
     style: 'Rococo',
     location: 'Louvre, Paris, France',
     artist_id: 6,
-    museum_id: 4
+    museum_id: 4,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Self-portrait_with_Her_Daughter_by_Elisabeth-Louise_Vig%C3%A9e_Le_Brun.jpg'
 },
 {
     title: 'Mona Lisa',
@@ -66,7 +73,8 @@ const artData = [
     style: 'High Renaissance',
     location: 'Louvre, Paris, France',
     artist_id: 7,
-    museum_id: 4
+    museum_id: 4,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg'
 },
 {
     artist_name: 'Unknown',
@@ -199,7 +207,8 @@ const artData = [
     style: 'Northern Renaissance',
     location: 'National Gallery of Art, London',
     artist_id: 17,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)#/media/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg'
 },
 {
 
