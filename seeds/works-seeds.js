@@ -10,7 +10,7 @@ const artData = [
     style: 'Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 1,
-    image_url: 'https://en.wikipedia.org/wiki/Folies_Berg%C3%A8re#/media/File:Edouard_Manet,_A_Bar_at_the_Folies-Berg%C3%A8re.jpg'
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Edouard_Manet%2C_A_Bar_at_the_Folies-Berg%C3%A8re.jpg'
 
 },
 {
@@ -21,7 +21,7 @@ const artData = [
     style: 'Post-Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 2,
-    image_url: 'https://en.wikipedia.org/wiki/The_Card_Players#/media/File:Paul_C%C3%A9zanne,_1892-95,_Les_joueurs_de_carte_(The_Card_Players),_60_x_73_cm,_oil_on_canvas,_Courtauld_Institute_of_Art,_London.jpg'
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Paul_C%C3%A9zanne%2C_1892-95%2C_Les_joueurs_de_carte_%28The_Card_Players%29%2C_60_x_73_cm%2C_oil_on_canvas%2C_Courtauld_Institute_of_Art%2C_London.jpg'
 },   
 {
     artist_name: 'Peter Paul Rubens',
@@ -51,7 +51,7 @@ const artData = [
     style: 'Post-Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 5,
-    image_url: 'https://en.wikipedia.org/wiki/Self-Portrait_with_Bandaged_Ear#/media/File:Vincent_van_Gogh_-_Self-portrait_with_bandaged_ear_(1889,_Courtauld_Institute).jpg'
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/6/62/Vincent_van_Gogh_-_Self-portrait_with_bandaged_ear_%281889%2C_Courtauld_Institute%29.jpg'
 },
 {
     artist_name: 'Elizabeth Vigee-LeBrun',
@@ -61,7 +61,7 @@ const artData = [
     style: 'Rococo',
     location: 'Louvre, Paris, France',
     artist_id: 6,
-    image_url: 'https://en.wikipedia.org/wiki/%C3%89lisabeth_Vig%C3%A9e_Le_Brun#/media/File:Self-portrait_with_Her_Daughter_by_Elisabeth-Louise_Vig%C3%A9e_Le_Brun.jpg'
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Self-portrait_with_Her_Daughter_by_Elisabeth-Louise_Vig%C3%A9e_Le_Brun.jpg'
 },
 {
     artist_name: 'Leonardo da Vinci',
@@ -71,7 +71,7 @@ const artData = [
     style: 'High Renaissance',
     location: 'Louvre, Paris, France',
     artist_id: 7,
-    image_url: 'https://en.wikipedia.org/wiki/Mona_Lisa#/media/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg'
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg'
 },
 {
     artist_name: 'Unknown',
