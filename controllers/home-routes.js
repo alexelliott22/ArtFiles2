@@ -61,6 +61,7 @@ router.get('/artwork/:id', (req, res) => {
         const post = dbPostData.get({ plain: true });
 
         // pass data to template
+        //can we change to single-artwork
         res.render('single-post', {
             post,
             loggedIn: req.session.loggedIn
