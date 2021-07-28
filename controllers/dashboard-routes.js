@@ -5,9 +5,9 @@ const { Artwork, Museum, Artist} = require('../models');
 // GET /dashboard
 router.get('/', (req, res) => {  
   Artwork.findAll({
-      // where: {
-      //   museum_id: req.session.user_id
-      // },
+      where: {
+        museum_id: req.session.museum_id
+      },
       attributes: [
         'id',
         'title',
