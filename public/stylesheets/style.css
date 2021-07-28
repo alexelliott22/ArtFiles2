@@ -111,10 +111,8 @@ nav {
     color: white !important;
 }
 
-
-
 nav a:hover {
-    color: white !important;
+    color: rgb(90, 33, 33) !important;
 }
 
 a .navbar-brand, .navbar-nav {
@@ -187,6 +185,11 @@ a .navbar-brand, .navbar-nav {
 }
 
 /* CARDS */
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
 .card {
     margin: 0 0 20px 0;
     border: 3px solid var(--light);

@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location'
+        'location',
       ],
       include: [
         {
