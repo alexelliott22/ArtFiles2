@@ -62,7 +62,7 @@ router.get('/artwork/:id', (req, res) => {
 
         // pass data to template
         //can we change to single-artwork
-        res.render('single-post', {
+        res.render('single-artwork', {
             post,
             loggedIn: req.session.loggedIn
         });
