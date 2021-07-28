@@ -11,7 +11,8 @@ router.get('/', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location'
+        'location',
+        'image_url'
       ],
       include: [
         {
@@ -31,16 +32,6 @@ router.get('/', (req, res) => {
       console.log('Failed to get posts');
       res.status(500).json(err);
     });
-    // const posts = dbPostData.map(post => post.get({ plain: true }))
-    //         res.render('all-posts', {
-    //             posts: posts,
-    //             loggedIn: req.session.loggedIn
-    //         });
-    //       })
-    //       .catch(err => {
-    //           console.log('Failed to get posts');
-    //           res.status(500).json(err);
-    //       })
 });
 
 //get individual artwork
@@ -56,7 +47,8 @@ router.get('/:id', (req, res) => {
         'created_at',
         'date',
         'style',
-        'location'
+        'location',
+        'image_url'
       ],
       include: [
         {
@@ -91,7 +83,8 @@ router.post('/', (req, res) => {
       style: req.body.style,
       location: req.body.location,
       museum_id: req.session.museum_id,
-      artist_id: req.body.artist_id
+      artist_id: req.body.artist_id,
+      image_url: req.body.artworkImg
 
     })
     .then(dbPostData => res.json(dbPostData))

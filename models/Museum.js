@@ -20,6 +20,10 @@ Museum.init(
             primaryKey: true,
             autoIncrement: true
         },
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         //define a username column
         username: {
             type: DataTypes.STRING,
@@ -48,13 +52,23 @@ Museum.init(
         hooks: {
             // set up beforeCreate lifecycle "hook" functionality
             async beforeCreate(newUserData) {
-                newUserData.password = await bcrypt.hash(newUserData.password, 10);
-                return newUserData;
+                try {
+                    newUserData.password = await bcrypt.hash(newUserData.password, 10);
+                    return newUserData;
+                    
+                } catch (error) {
+                    console.log(error)
+                }
             },
             // set up beforeUpdate lifecycle "hook" functionality
             async beforeUpdate(updatedUserData) {
-                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-                return updatedUserData;
+                try {
+                    updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+                    return updatedUserData;
+                    
+                } catch (error) {
+                    console.log(error)
+                }
             }
         },
 

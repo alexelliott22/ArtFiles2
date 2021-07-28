@@ -29,7 +29,8 @@ router.get('/:id', (req, res) => {
                 'created_at',
                 'date',
                 'style',
-                'location'],
+                'location',
+                'image_url'],
                 include: [
                     {
                         model: Artist,
@@ -61,7 +62,7 @@ router.post('/', (req, res) => {
     })
     .then(dbUserData => {
         req.session.save(() => {
-            req.session.user_id = dbUserData.id;
+            req.session.museum_id = dbUserData.id;
             req.session.username = dbUserData.username;
             req.session.loggedIn = true;
 
@@ -109,14 +110,19 @@ router.post('/login', (req, res) => {
 });
 
 //user logsout
-router.post('/logout', (req, res) => {
-    if (req.session.loggedIn) {
-      req.session.destroy(() => {
-        res.status(204).end();
-      });
-    }
-    else {
-      res.status(404).end();
+router.post('/logout', async (req, res) => {
+    try {
+        if (req.session.loggedIn) {
+          req.session.destroy(() => {
+            res.status(204).end();
+          });
+        }
+        else {
+          res.status(404).end();
+        }
+        
+    } catch (error) {
+        console.log(error)
     }
 });
 

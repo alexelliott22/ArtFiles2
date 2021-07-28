@@ -3,27 +3,32 @@ const { Museum } = require('../models');
 const museumData = [
 
 {
-    username: 'The Metropolitain Museum of Art',
+    name: 'The Metropolitain Museum of Art',
+    username: 'metNY',
     email: 'curator@metmuseum.org',
     password: 'password123'
 },
 {
-    username: 'Museum of Modern Art',
+    name: 'Museum of Modern Art',
+    username: 'modernart',
     email: 'curator@moma.org',
     password: 'password222'
 },
 {
-    username: 'The National Gallery',
+    name: 'The National Gallery',
+    username: 'nationalgallery',
     email: 'curator@nationalgallery.org',
     password: 'password333'
 },
 {
-    username: 'The Louvre',
+    name: 'The Louvre',
+    username: 'lourve',
     email: 'curator@louvre.fr',
     password: 'password444'
 },
 {
-    username: 'The Courtauld Gallery',
+    name: 'The Courtauld Gallery',
+    username: 'courtgallery',
     email: 'curator@courtauld.uk',
     password: 'password555'
 },

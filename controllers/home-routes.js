@@ -9,14 +9,20 @@ router.get('/', (req, res) => {
 });
 
 //login route
-router.get('/login', (req, res) => {
-    if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
+router.get('/login', async (req, res) => {
+    try {
+        if (req.session.loggedIn) {
+            res.redirect('/');
+            return;
+        }
+        res.render('login', {
+            loggedIn: req.session.loggedIn
+        })
+        
+        
+    } catch (error) {
+        console.log(error)
     }
-    res.render('login', {
-        loggedIn: req.session.loggedIn
-    })
 });
 
 router.get('/artwork/:id', (req, res) => {
