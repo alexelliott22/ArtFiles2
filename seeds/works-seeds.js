@@ -3,68 +3,70 @@ const { Artwork} = require('../models');
 const artData = [
 
 {
-    artist_name: 'Edouard Manet',
+
     title: 'Bar at the Folies Bergere',
     medium: 'oil on canvas',
     date: '1882',
     style: 'Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 1,
-    museum_id: 4
+    museum_id: 5
 },
 {
-    artist_name: 'Paul Cezanne',
+
     title: 'Card Players',
     medium: 'oil on canvas',
     date: '1892',
     style: 'Post-Impressionism',
     location: 'Courtauld Gallery, London, UK',
-    artist_id: 2
+    artist_id: 2,
+    museum_id: 5
 },   
 {
-    artist_name: 'Peter Paul Rubens',
+
     title: 'Landscape by Moonlight',
     medium: 'oil on panel',
     date: '1672',
     style: 'Baroque',
     location: 'Courtauld Gallery, London, UK',
-    artist_id: 3
+    artist_id: 3,
+    museum_id: 5
 },
 {
-    artist_name: 'Edgar Degas',
     title: 'Lady with a Parasol',
     medium: 'oil on canvas',
     date: '1870',
     style: 'Impressionism',
     location: 'Courtauld Gallery, London, UK',
-    artist_id: 4
+    artist_id: 4,
+    museum_id: 5
 },
 {
-    artist_name: 'Vincent Van Gogh',
     title: 'Self-Portrait with Bandaged Ear',
     medium: 'oil on canvas',
     date: '1889',
     style: 'Post-Impressionism',
     location: 'Courtauld Gallery, London, UK',
     artist_id: 5,
+    museum_id: 5
 },
 {
-    artist_name: 'Elizabeth Vigee-LeBrun',
     title: 'Madame Vigee-LeBrun and Her Daughter',
     medium: 'oil on canvas',
     date: '1786',
     style: 'Rococo',
     location: 'Louvre, Paris, France',
-    artist_id: 6
+    artist_id: 6,
+    museum_id: 4
 },
 {
-    artist_name: 'Leonardo da Vinci',
     title: 'Mona Lisa',
     medium: 'oil on wood panel',
     date: '1519',
     style: 'High Renaissance',
     location: 'Louvre, Paris, France',
-    artist_id: 7
+    artist_id: 7,
+    museum_id: 4
 },
 {
     artist_name: 'Unknown',
@@ -73,73 +75,79 @@ const artData = [
     date: '130 BCE',
     style: 'Classic Antiquity',
     location: 'Louvre, Paris, France',
-    artist_id: 34
+    artist_id: 34,
+    museum_id: 4
 },
 {
-    artist_name: 'Unknown',
     title: 'Great Sphinx of Tanis',
     medium: 'rose granite',
     date: '2600 BC',
     style: 'Egyptian',
     location: 'Louvre, Paris, France',
-    artist_id: 34
+    artist_id: 34,
+    museum_id: 4
 },
 {
-    artist_name: 'Jacques-Louis David',
     title: 'Oath of the Horatii',
     medium: 'oil on canvas',
     date: '1786',
     style: 'Neo-Classicism',
     location: 'Louvre, Paris, France',
-    artist_id: 8
+    artist_id: 8,
+    museum_id: 4
 },
 {
-    artist_name: 'James Abbott McNeill Whistler',
+
     title:'Nocturne (The Thames at Battersea)',
     medium: 'lithotint',
     date: '1878',
     style: 'Aesthetic Movement',
     location: 'The Metropolitan Museum of Art, NY, NY',
-    artist_id: 9
+    artist_id: 9,
+    museum_id: 1
 },
 {
-    artist_name: 'George Bellows',
+
     title: 'Dempsey through the Ropes',
     medium: 'lithographic crayon on paper',
     date: '1923',
     style: 'Ash Can School',
     location: 'The Metropolitan Museum of Art, NY, NY',
-    artist_id: 10
+    artist_id: 10,
+    museum_id: 1
 },
 {
-    artist_name: 'Rembranst van Rijn',
+
     title: 'Aristotle with a Bust of Homer',
     medium: 'oil on canvas',
     date: '1653',
     style: 'Dutch Golden Age',
     location: 'The Metropolitan Museum of Art, NY, NY',
-    artist_id: 11
+    artist_id: 11,
+    museum_id: 1
 },
 {
-    artist_name: 'Winslow Homer',
+
     title: 'The Gulf Stream',
     medium: 'oil on canvas',
     date: '1889',
     style: 'Naturalism',
     location: 'The Metropolitan Museum of Art',
-    artist_id: 12
+    artist_id: 12,
+    museum_id: 1
 },
 {
-    artist_name: 'Jacque-Louis David',
+
     title: 'The Death of Socrates',
     medium: 'oil on canvas',
     date: '1787',
     style: 'Neo-Classical',
     location: 'The Metropolitan Museum of Art',
-    artist_id: 8
+    artist_id: 8,
+    museum_id: 1
 },
 {
-    artist_name: 'Edward Hopper',
+
     title: 'Nighthawks',
     medium: 'oil on canvas',
     date: '1942',
@@ -148,7 +156,7 @@ const artData = [
     artist_id: 13
 },
 {
-    artist_name: 'Pablo Picasso',
+
     title: 'Girl before Mirror',
     medium: 'oil on canvas',
     date: '1932',
@@ -157,7 +165,7 @@ const artData = [
     artist_id: 14
 },
 {
-    artist_name: 'Vincent Van Gogh',
+
     title: 'Starry Night',
     medium: 'oil on canvas',
     date: '1912',
@@ -166,7 +174,7 @@ const artData = [
     artist_id: 5
 },
 {
-    artist_name: 'Salvador Dali',
+
     title: 'Persistence of Memory',
     medium: 'oil on canvas',
     date: '1931',
@@ -175,7 +183,7 @@ const artData = [
     artist_id: 15
 },
 {
-    artist_name: 'Roy Lichtenstein',
+
     title: 'Drowning Girl',
     medium: 'oil on acrylic',
     date: '1963',
@@ -184,52 +192,57 @@ const artData = [
     artist_id: 16
 },
 {
-    artist_name: 'Hans Holbein the Younger',
+
     title: 'The Ambassadors',
     medium: 'oil on oak',
     date: '1533',
     style: 'Northern Renaissance',
     location: 'National Gallery of Art, London',
-    artist_id: 17
+    artist_id: 17,
+    museum_id: 3
 },
 {
-    artist_name: 'Leonardo da Vinci',
+
     title: 'The Virgin of the Rocks',
     medium: 'oil on panel',
     date: '1483-1486',
     style: 'Renaissance',
     location: 'National Gallery of Art, London',
-    artist_id: 7
+    artist_id: 7,
+    museum_id: 3
 },
 {
-    artist_name: 'Rembrandt',
+
     title: 'Self Portrait at Age of 34',
     medium: 'oil on canvas',
     date: '1640',
     style: 'Dutch Golden Age',
     location: 'National Gallery of Art, London',
-    artist_id: 11
+    artist_id: 11,
+    museum_id: 3
 },
 {
-    artist_name: 'Jan van Eyck',
+
     title: 'The Arnolfini Portrait',
     medium: 'oil on oak panel',
     date: '1434',
     style: 'Northern Renaissance',
     location: 'National Gallery of Art, London',
-    artist_id: 18
+    artist_id: 18,
+    museum_id: 3
 },
 {
-    artist_name: 'J. M. W. Turner',
+
     title: 'The Fighting Temeraire',
     medium: 'oil on canvas',
     date: '1839',
     style: 'Romanticism',
     location: 'National Gallery of Art, London',
-    artist_id: 19
+    artist_id: 19,
+    museum_id: 3
 },
 {
-    artist_name: 'Pablo Picasso',
+
     title: 'Guernica',
     medium: 'oil on canvas',
     date: '1937',
@@ -238,7 +251,7 @@ const artData = [
     artist_id: 14
 },
 {
-    artist_name: 'Michelangelo',
+
     title: 'David',
     medium: 'marble sculpture',
     date: '1504',
@@ -247,7 +260,7 @@ const artData = [
     artist_id: 20
 },
 {
-    artist_name: 'Sandro Botticelli',
+
     title: 'Birth of Venus',
     medium: 'oil on panel',
     date: '1485',
@@ -256,7 +269,7 @@ const artData = [
     artist_id: 21
 },
 {
-    artist_name: 'Rafael',
+
     title: 'School of Athens',
     medium: 'fresco',
     date: '1511',
@@ -265,7 +278,7 @@ const artData = [
     artist_id: 22
 },
 {
-    artist_name: 'Artemisia Gentelleschi',
+
     title: 'Judith and Holofernes',
     medium: 'oil on canvas',
     date: '1612',
@@ -274,7 +287,7 @@ const artData = [
     artist_id: 23
 },
 {
-    artist_name: 'William Bourgereau',
+
     title: 'Nymphs and Satyr',
     medium: 'oil on canvas',
     date: '1873',
@@ -283,7 +296,7 @@ const artData = [
     artist_id: 24
 },
 {
-    artist_name: 'Jacob Lawrence',
+
     title: 'The Migration gained in momentum',
     medium: 'casein tempura on hardboard',
     date: '1940',
@@ -292,7 +305,7 @@ const artData = [
     artist_id: 25
 },
 {
-    artist_name: 'Edward Hopper',
+
     title: 'Gas',
     medium: 'oil on canvas',
     date: '1940',
@@ -301,7 +314,7 @@ const artData = [
     artist_id: 13
 },
 {
-    artist_name: 'Gustave Courbet',
+
     title: 'The Desperate Man (self-portrait)',
     medium: 'oil on canvas',
     date: '1843',
@@ -310,7 +323,7 @@ const artData = [
     artist_id: 26
 },
 {
-    artist_name: 'Gustave Caillebotte',
+
     title: 'The Floor Scrapers',
     medium: 'oil on canvas',
     date: '1874',
@@ -319,7 +332,7 @@ const artData = [
     artist_id: 27 
 },
 {
-    artist_name: 'Sandro Botticelli',
+
     title: 'La Primavera',
     medium: 'oil on canvas',
     date: '1482',
@@ -328,7 +341,7 @@ const artData = [
     artist_id: 21
 },
 {
-    artist_name: 'Rembrandt',
+
     title: 'The Night Watch',
     medium: 'oil on canvas',
     date: '1642',
@@ -337,7 +350,7 @@ const artData = [
     artist_id: 11
 },
 {
-    artist_name: 'Vermeer',
+
     title: 'Girl with the Pearl Earring',
     medium: 'oil on canvas',
     date: '1665',
@@ -346,7 +359,7 @@ const artData = [
     artist_id: 28 
 },
 {
-    artist_name: 'Vincent Van Gogh',
+
     title: 'Self-portrait',
     medium: 'oil on canvas',
     date: '1887',
@@ -355,7 +368,7 @@ const artData = [
     artist_id: 5
 },
 {
-    artist_name: 'Rodin',
+
     title: 'The Thinker',
     medium: 'bronze',
     date: '1904',
@@ -364,7 +377,7 @@ const artData = [
     artist_id: 29
 },
 {
-    artist_name: 'Thutmose',
+
     title: 'Bust of Neferetiti',
     medium: 'limestone',
     date: '1341',
@@ -373,7 +386,7 @@ const artData = [
     artist_id: 30
 },
 {
-    artist_name: 'John Singer Sargent',
+
     title: 'Madame X',
     medium: 'oil on canvas',
     date: '1884',
@@ -382,7 +395,7 @@ const artData = [
     artist_id: 31
 },
 {
-    artist_name: 'Caravaggio',
+
     title: 'The Flagellation of Christ',
     medium: 'oil on canvas',
     date: '1607',
@@ -391,7 +404,7 @@ const artData = [
     artist_id: 32 
 },
 {
-    artist_name: 'Claude Monet',
+
     title: 'Water Lilies',
     medium: 'oil on canvas',
     date: '1914',
