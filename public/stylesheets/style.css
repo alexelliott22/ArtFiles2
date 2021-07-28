@@ -89,9 +89,17 @@ a {
 }
 
 header {
-    background-image: url('../assets/LogoHDR.png');
+    background-image: url('../assets/HDRart.png');
     background-size: cover;
     background-blend-mode: screen;
+}
+
+.logo {
+  
+  text-align: center;
+  background-color: rgb(0 0 0 / 67%);
+  color: white;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .img-fluid {
@@ -99,9 +107,6 @@ header {
     height: auto; 
 }
 
-.catalog {
-    background-color: #22333b;
-}
 
 nav {
     width: 100%;
@@ -109,6 +114,10 @@ nav {
     justify-content: center;
     display:inline-block;
     color: white !important;
+}
+
+.navbar-nav {
+  color: white !important;
 }
 
 nav a:hover {
@@ -151,6 +160,10 @@ a .navbar-brand, .navbar-nav {
     background-color: var(--secondary);
 }
 
+#search-artist {
+  background-color: #8b1b19;
+}
+
 .btn-outline-secondary {
   background-color: #8b1b19;
 
@@ -166,7 +179,7 @@ a .navbar-brand, .navbar-nav {
 }
 
 #logout {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
     text-decoration: none;
     padding: 0.5rem 1.2rem;
     width: 25%;
