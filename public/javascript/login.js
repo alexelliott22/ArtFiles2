@@ -33,6 +33,7 @@ const createAccount = async (event) => {
         
         event.preventDefault();
     
+        const name = document.querySelector('#name-signup').value;
         const username = document.querySelector('#username-signup').value.trim();
         const email = document.querySelector('#email-signup').value.trim();
         const password = document.querySelector('#password-signup').value.trim();
@@ -41,6 +42,7 @@ const createAccount = async (event) => {
             const response = await fetch('/api/museum', {
                 method: 'post',
                 body: JSON.stringify({
+                    name,
                     username,
                     email,
                     password
