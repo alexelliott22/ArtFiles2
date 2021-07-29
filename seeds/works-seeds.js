@@ -84,7 +84,8 @@ const artData = [
     style: 'Classic Antiquity',
     location: 'Louvre, Paris, France',
     artist_id: 34,
-    museum_id: 4
+    museum_id: 4,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/1024px-Front_views_of_the_Venus_de_Milo.jpg'
 },
 {
     title: 'Great Sphinx of Tanis',
@@ -93,7 +94,8 @@ const artData = [
     style: 'Egyptian',
     location: 'Louvre, Paris, France',
     artist_id: 34,
-    museum_id: 4
+    museum_id: 4,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Great_Sphinx_of_Tanis.jpg/2560px-Great_Sphinx_of_Tanis.jpg'
 },
 {
     title: 'Oath of the Horatii',
@@ -102,7 +104,8 @@ const artData = [
     style: 'Neo-Classicism',
     location: 'Louvre, Paris, France',
     artist_id: 8,
-    museum_id: 4
+    museum_id: 4,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/3/35/Jacques-Louis_David%2C_Le_Serment_des_Horaces.jpg'
 },
 {
 
@@ -112,17 +115,19 @@ const artData = [
     style: 'Aesthetic Movement',
     location: 'The Metropolitan Museum of Art, NY, NY',
     artist_id: 9,
-    museum_id: 1
+    museum_id: 1,
+    image_url: 'https://images.metmuseum.org/CRDImages/dp/original/DP813769.jpg'
 },
 {
 
-    title: 'Dempsey through the Ropes',
-    medium: 'lithographic crayon on paper',
+    title: 'Dempsey and Firpo',
+    medium: 'oil on canvas',
     date: '1923',
     style: 'Ash Can School',
     location: 'The Metropolitan Museum of Art, NY, NY',
     artist_id: 10,
-    museum_id: 1
+    museum_id: 1,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Bellows_George_Dempsey_and_Firpo_1924.jpg'
 },
 {
 
@@ -132,7 +137,8 @@ const artData = [
     style: 'Dutch Golden Age',
     location: 'The Metropolitan Museum of Art, NY, NY',
     artist_id: 11,
-    museum_id: 1
+    museum_id: 1,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_WGA19232.jpg/1920px-Rembrandt_-_Aristotle_with_a_Bust_of_Homer_-_WGA19232.jpg'
 },
 {
 
@@ -142,7 +148,8 @@ const artData = [
     style: 'Naturalism',
     location: 'The Metropolitan Museum of Art',
     artist_id: 12,
-    museum_id: 1
+    museum_id: 1,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Winslow_Homer_-_The_Gulf_Stream_-_Metropolitan_Museum_of_Art.jpg/2880px-Winslow_Homer_-_The_Gulf_Stream_-_Metropolitan_Museum_of_Art.jpg'
 },
 {
 
@@ -152,7 +159,8 @@ const artData = [
     style: 'Neo-Classical',
     location: 'The Metropolitan Museum of Art',
     artist_id: 8,
-    museum_id: 1
+    museum_id: 1,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/David_-_The_Death_of_Socrates.jpg/2880px-David_-_The_Death_of_Socrates.jpg'
 },
 {
 
@@ -162,7 +170,8 @@ const artData = [
     style: 'Realist',
     location: 'The Art Institute of Chicago',
     artist_id: 13,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/2880px-Nighthawks_by_Edward_Hopper_1942.jpg'
 },
 {
 
