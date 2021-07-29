@@ -1,9 +1,9 @@
 const getSingleArtwork = (e) => {
-    
+    e.preventDefault();
 
-    console.log(e.path[1]);
-    console.log('here')
-    // const artworkID = 
+    const artworkID = e.path[1].id
+
+    window.location.href = `/single-artwork/${artworkID}`
 }
 
-document.querySelector('.card').addEventListener('click', getSingleArtwork);
+document.querySelector('.art-list').addEventListener('click', getSingleArtwork);

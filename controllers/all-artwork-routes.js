@@ -89,11 +89,20 @@ router.get('/', async (req, res) => {
     }    
 });
 
-router.get('/all-artwork/:id', (req, res) => {
+router.get('/single-artwork/:id', (req, res) => {
     Artwork.findOne({
         where: {
             id: req.params.id
-        },
+        },attributes: [
+            'id',
+            'title',
+            'medium',
+            'created_at',
+            'date',
+            'style',
+            'location',
+            'image_url'
+        ],
         include: [
             {
                 model: Museum,
