@@ -15,9 +15,9 @@
 
 @font-face {
     font-family: 'gallery_modernregular';
-    src: url('gallerymodern-webfont.woff2') format('woff2'),
-        url('gallerymodern-webfont.woff') format('woff'),
-        url('gallerymodern-webfont.ttf') format('truetype');
+    src: url('../assets/gallerymodern-webfont.woff2') format('woff2'),
+        url('../assets/gallerymodern-webfont.woff') format('woff'),
+        url('../assets/gallerymodern-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -94,12 +94,14 @@ header {
     background-blend-mode: screen;
 }
 
-.logo {
+.logo, .catalog, .welcome {
   
+  font-family: 'gallery_modernregular'!important;
   text-align: center;
+  font-style: inherit;
   background-color: rgb(0 0 0 / 67%);
   color: white;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /*font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 .img-fluid {
@@ -117,12 +119,12 @@ nav {
     font-size: 18px;
 }
 
-.navbar-nav {
+.navbar-nav, .navbar-light, .nav-link.active, .navbar-light, .show, .nav-link{
   color: white !important;
 }
 
 nav a:hover {
-    color: white !important;
+    color:#8b1b19 !important;
 }
 
 a .navbar-brand, .navbar-nav {
@@ -189,7 +191,7 @@ a .navbar-brand, .navbar-nav {
     border: none;
 }
 
-.login-form, .signup-form, .name-signup {
+.login-form, .signup-form {
   margin: 2rem auto;
   text-align: center;
   max-width:50%;
@@ -199,7 +201,7 @@ a .navbar-brand, .navbar-nav {
   padding-bottom: 1rem;
 }
 
-.username-signup, .password-signup {
+.username-signup, .password-signup, .name-signup {
   padding-bottom: 1rem;
 }
 
@@ -226,6 +228,7 @@ ul {
     border-radius: var(--border-radius);
     background-color: var(--secondary);
     color: var(--dark);
+    min-height: 180px;
 }
 
 .card-header {
@@ -239,6 +242,10 @@ ul {
     padding: 2.5%;
 }
 
+.card-img {
+  min-height: 180px;
+}
+
   /* FORM */
 .form-label,
 .form-input,
@@ -247,7 +254,8 @@ ul {
 }
 
 .form-label {
-    font-size: 1.2rem;
+  display: block;  
+  font-size: 1.2rem;
     margin: 0.625rem 0 0.25rem;
 }
 
