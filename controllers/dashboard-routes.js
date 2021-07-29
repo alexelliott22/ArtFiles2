@@ -33,7 +33,7 @@ router.get('/', (req, res) => {
         // serialize data before passing to template
         const posts = dbPostData.map(post => post.get({ plain: true }));
     
-        res.render('artwork-dashboard', { posts, loggedIn: true, layout: 'main'});
+        res.render('artwork-dashboard', { posts, loggedIn: true, layout: 'dashboard'});
     })
     .catch(err => {
         console.log('failed to get posts');
