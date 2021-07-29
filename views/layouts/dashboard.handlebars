@@ -24,7 +24,65 @@
                 <a href="/login">login</a>
                 {{/if}}
             </nav>
-    {{{body}}}
+            <section class="p-3 mb-3 bg-dark flex-row align-center">
+                <h2 class="text-light col-12 col-lg-5">Add To Our Catalog.</h2>
+                <div class="col-12 col-lg-7 flex-row text-center justify-space-around align-center">
+                    <a class="btn col-12 col-md-auto mx-2" href="/all-artwork">View Artwork</a>
+                    <!-- do we nee another view?<a class="btn col-12 col-md-auto mx-2" href="/zookeepers">View </a>--->
+                </div>
+            </section>
+
+            <section class="my-4 flex-row justify-space-between">
+                <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+                    <h3 class="text-light">Enter Artwork</h3>
+                    <form id="works">
+                        <label for="artist-name" class="form-label">Artist Name</label>
+                        <input type="text" id="artistName" name="artist-name" class="form-input"
+                            placeholder="Enter Name">
+
+                        <label for="title-input" class="form-label">Title</label>
+                        <input type="text" id="artwork-title" name="title" class="form-input" placeholder="Enter Title">
+
+                        <label for="medium" class="form-label">Medium</label>
+                        <input type="text" id="artwork-medium" name="amedium" class="form-input"
+                            placeholder="Enter Medium">
+
+                        <label for="date" class="form-label">Date</label>
+                        <input type="text" id="artwork-date" name="date" class="form-input"
+                            placeholder="Enter Date for Artwork">
+
+                        <label for="style" class="form-label">Style</label>
+                        <input type="text" id="artwork-style" name="style" class="form-input"
+                            placeholder="Enter Style of Art">
+
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" id="artwork-location" name="location" class="form-input"
+                            placeholder="Enter Location/Museum">
+
+                        <label for="image" class="form-label">Image URL</label>
+                        <input type="text" name="artwork-image" id="artwork-img" class="form-input"
+                            placeholder="https://images.app.goo.gl/J64ky6xTLhJuXR6Y9">
+
+
+                        <button class="btn" id="add-artwork">Add Artwork</button>
+                    </form>
+                </div>
+
+                <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+                    <h3 class="text-light">Search for Artwork</h3>
+                    <form id="searchartist-form">
+                        <label for="artwork-title" class="form-label">Artwork Title</label>
+                        <input type="text" id="search-box" class="form-input input" placeholder="Enter Title"
+                            name="artwork-title">
+                        <button class="btn" id="search-artist">Search</button>
+                    </form>
+            </section>
+
+
+            {{{body}}}
 </body>
+
+<script src="/javascript/add-artwork.js"></script>
+<script src="/javascript/search-bar.js"></script>
 
 </html>
