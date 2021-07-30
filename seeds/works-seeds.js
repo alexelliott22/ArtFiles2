@@ -74,7 +74,7 @@ const artData = [
     location: 'Louvre, Paris, France',
     artist_id: 7,
     museum_id: 4,
-    image_url: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg'
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/Mona_Lisa.jpg'
 },
 {
     artist_name: 'Unknown',
@@ -181,7 +181,8 @@ const artData = [
     style: 'Cubism',
     location: 'MOMA',
     artist_id: 14,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/en/6/60/GirlBeforeAMirror.jpg'
 },
 {
 
@@ -191,7 +192,8 @@ const artData = [
     style: 'Post-Impressionism',
     location: 'MOMA',
     artist_id: 5,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/2560px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg'
 },
 {
 
@@ -222,7 +224,7 @@ const artData = [
     location: 'National Gallery of Art, London',
     artist_id: 17,
     museum_id: 3,
-    image_url: 'https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)#/media/File:Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg'
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg/1920px-Hans_Holbein_the_Younger_-_The_Ambassadors_-_Google_Art_Project.jpg'
 },
 {
 

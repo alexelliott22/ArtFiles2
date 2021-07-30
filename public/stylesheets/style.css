@@ -191,7 +191,7 @@ a .navbar-brand, .navbar-nav {
     text-decoration: none;
     padding: 0.5rem 1.2rem;
     width: 25%;
-    margin: 5px 0;
+    margin: 9px 0;
     border-radius: var(--border-radius);
     border: none;
 }
