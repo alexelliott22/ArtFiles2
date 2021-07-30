@@ -1,74 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>State of the Art</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
 
 <body>
     <div class="wrapper">
         <header class="py-3 mb-3">
-            <div class="flex-row justify-space-between align-center container-fluid mx-auto">
-                <h4 class="text-light catalog p-3">Artwork Location Catalog</h4>
-            </div>
-            <nav>
-                {{#if loggedIn}}
-                <button id="logout" class="btn-no-style">logout</button>
-                {{else}}
-                <a href="/login">login</a>
-                {{/if}}
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand ml-3" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="/">Home <span class="sr-only"></span></a>
+                        {{#if loggedIn}}
+                        <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+                        {{else}}
+                        <a class="nav-item nav-link" href="/login">Login</a>
+                        {{/if}}
+                        <a class="nav-item nav-link disabled" href="#"></a>
+                    </div>
+                </div>
             </nav>
-            <section class="p-3 mb-3 bg-dark flex-row align-center">
-                <h2 class="text-light col-12 col-lg-5">Add To Our Catalog.</h2>
-                <div class="col-12 col-lg-7 flex-row text-center justify-space-around align-center">
-                    <a class="btn col-12 col-md-auto mx-2" href="/all-artwork">View Artwork</a>
-                    <!-- do we nee another view?<a class="btn col-12 col-md-auto mx-2" href="/zookeepers">View </a>--->
-                </div>
-            </section>
+            <div class="row" id="logo-title">
+                <divclass="col-md-6 offset-md-3">
+                    <h1 class="logo display-3 p-3">State of the Art</h1>
+            </div>
+    </div>
+    </header>
 
-            <section class="my-4 flex-row justify-space-between">
-                <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
-                    <h3 class="text-light">Enter Artwork</h3>
-                    <form id="works">
-                        <label for="artist-name" class="form-label">Artist Name</label>
-                        <input type="text" id="artistName" name="artist-name" class="form-input"
-                            placeholder="Enter Name">
+    <body>
+        <div class="wrapper">
 
-                        <label for="title-input" class="form-label">Title</label>
-                        <input type="text" id="artwork-title" name="title" class="form-input" placeholder="Enter Title">
+            <div class="welcome" id="catalog-title">
+                <h3 class="welcome">Welcome to State of the Art</h3>
+            </div>
+            <div>
+                <h4 class="text-light catalog">An Artwork Location Catalog</h4>
+            </div>
+            <button id="logout" class="btn-warning">logout</button>
+        </div>
 
-                        <label for="medium" class="form-label">Medium</label>
-                        <input type="text" id="artwork-medium" name="amedium" class="form-input"
-                            placeholder="Enter Medium">
+        <section class="p-3 mb-3 bg-dark flex-row align-center">
+            <h2 class="text-light col-12 col-lg-5">Add To Our Catalog.</h2>
+            <div class="col-12 col-lg-7 flex-row text-center justify-space-around align-center">
+                <a class="btn col-12 col-md-auto mx-2" href="/all-artwork">View Artwork</a>
+                <!-- do we nee another view?<a class="btn col-12 col-md-auto mx-2" href="/zookeepers">View </a>--->
+            </div>
+        </section>
 
-                        <label for="date" class="form-label">Date</label>
-                        <input type="text" id="artwork-date" name="date" class="form-input"
-                            placeholder="Enter Date for Artwork">
+        <section class="my-4 flex-row justify-space-between">
+            <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+                <h3 class="text-light">Enter Artwork</h3>
+                <form id="works">
+                    <label for="artist-name" class="form-label">Artist Name</label>
+                    <input type="text" id="artistName" name="artist-name" class="form-input" placeholder="Enter Name">
 
-                        <label for="style" class="form-label">Style</label>
-                        <input type="text" id="artwork-style" name="style" class="form-input"
-                            placeholder="Enter Style of Art">
+                    <label for="title-input" class="form-label">Title</label>
+                    <input type="text" id="artwork-title" name="title" class="form-input" placeholder="Enter Title">
 
-                        <label for="location" class="form-label">Location</label>
-                        <input type="text" id="artwork-location" name="location" class="form-input"
-                            placeholder="Enter Location/Museum">
+                    <label for="medium" class="form-label">Medium</label>
+                    <input type="text" id="artwork-medium" name="amedium" class="form-input" placeholder="Enter Medium">
 
-                        <label for="image" class="form-label">Image URL</label>
-                        <input type="text" name="artwork-image" id="artwork-img" class="form-input"
-                            placeholder="https://images.app.goo.gl/J64ky6xTLhJuXR6Y9">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="text" id="artwork-date" name="date" class="form-input"
+                        placeholder="Enter Date for Artwork">
 
+                    <label for="style" class="form-label">Style</label>
+                    <input type="text" id="artwork-style" name="style" class="form-input"
+                        placeholder="Enter Style of Art">
 
-                        <button class="btn" id="add-artwork">Add Artwork</button>
-                    </form>
-                </div>
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" id="artwork-location" name="location" class="form-input"
+                        placeholder="Enter Location/Museum">
 
-                <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
-                    <h3 class="text-light">Search for Artwork</h3>
-                    <form id="searchartist-form">
-                        <label for="artwork-title" class="form-label">Artwork Title</label>
-                        <input type="text" id="search-box" class="form-input input" placeholder="Enter Title"
-                            name="artwork-title">
-                        <button class="btn" id="search-artist">Search</button>
-                    </form>
-            </section>
+                    <label for="image" class="form-label">Image URL</label>
+                    <input type="text" name="artwork-image" id="artwork-img" class="form-input"
+                        placeholder="https://images.app.goo.gl/J64ky6xTLhJuXR6Y9">
 
 
-            {{{body}}}
-</body>
+                    <button class="btn" id="add-artwork">Add Artwork</button>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-6 bg-dark p-3 mb-3">
+                <h3 class="text-light">Search for Artwork</h3>
+                <form id="searchartist-form">
+                    <label for="artwork-title" class="form-label">Artwork Title</label>
+                    <input type="text" id="search-box" class="form-input input" placeholder="Enter Title"
+                        name="artwork-title">
+                    <button class="btn" id="search-artist">Search</button>
+                </form>
+            </div>    
+        </section>
+
+
+        {{{body}}}
+    </body>
 
 <script src="/javascript/add-artwork.js"></script>
 <script src="/javascript/search-bar.js"></script>
