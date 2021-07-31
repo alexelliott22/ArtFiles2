@@ -4,16 +4,6 @@ const { Artwork, Museum, Artist} = require('../../models');
 // get all posts
 router.get('/', (req, res) => {
     Artwork.findAll({
-      attributes: [
-        'id',
-        'title',
-        'medium',
-        'created_at',
-        'date',
-        'style',
-        'location',
-        'image_url'
-      ],
       include: [
         {
           model: Museum,
@@ -40,16 +30,6 @@ router.get('/:id', (req, res) => {
       where: {
         id: req.params.id
       },
-      attributes: [
-        'id',
-        'title',
-        'medium',
-        'created_at',
-        'date',
-        'style',
-        'location',
-        'image_url'
-      ],
       include: [
         {
           model: Museum,

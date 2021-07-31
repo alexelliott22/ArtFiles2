@@ -23,13 +23,7 @@ router.get('/:id', (req, res) => {
     Artist.findOne({
       where: {
         id: req.params.id
-      },
-      attributes: [
-        'id',
-        'artist_name',
-        'birth_date',
-        'death_date'
-      ]
+      }
     })
     .then(dbPostData => {
       if (!dbPostData) {

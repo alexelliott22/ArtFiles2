@@ -23,15 +23,6 @@ router.get('/:id', (req, res) => {
         include: [
             {
                 model: Artwork,
-                attributes: [        
-                'id',
-                'title',
-                'medium',
-                'created_at',
-                'date',
-                'style',
-                'location',
-                'image_url'],
                 include: [
                     {
                         model: Artist,

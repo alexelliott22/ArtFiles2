@@ -3,7 +3,7 @@ const getSingleArtwork = (e) => {
 
     const artworkID = e.path[1].id
 
-    window.location.href = `/all-artwork/single-artwork/${artworkID}`
+    window.location.href = `/single-artwork/${artworkID}`
 }
 
 document.querySelector('.art-list').addEventListener('click', getSingleArtwork);
