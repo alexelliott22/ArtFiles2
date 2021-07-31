@@ -23,8 +23,11 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="/">Home <span class="sr-only"></span></a>
+                        {{#if loggedIn}}
                         <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+                        {{else}}
                         <a class="nav-item nav-link" href="/login">Login</a>
+                        {{/if}}
                         <a class="nav-item nav-link disabled" href="#"></a>
                     </div>
                 </div>
@@ -58,7 +61,10 @@
                 <section class="p-1 my-4">
                     <h5 class="text-light">Find artwork globally</h5>
                     <p>Locate a work of art or update the catalog with the location of your institutions artwork.</p>
+                    {{#if loggedIn}}
+                    {{else}}
                     <p>Sign up or Log in to add to our collection</p>
+                    {{/if}}
                 </section>
             </div>
 
@@ -76,14 +82,9 @@
     </div>
 
     {{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
+    <script src="/javascript/logout.js"></script>
     {{/if}}
-<<<<<<< HEAD
-    <script src="/javascript/search-bar.js"></script>
-
-=======
-<script src="/javascript/search-bar.js"></script>
->>>>>>> main
+    
 </body>
 
 </html>
