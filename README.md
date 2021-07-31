@@ -17,7 +17,7 @@ Technologies Used:
 Deployment Requirements: 
 •	Live URL via Heroku
 Deployed app: https://state-of-art.herokuapp.com/
-GitHub: https://state-of-art.herokuapp.com/
+GitHub: https://github.com/alexelliott22/ArtFiles2
 
 Mock Up: 
 
