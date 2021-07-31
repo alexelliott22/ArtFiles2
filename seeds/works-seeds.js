@@ -203,7 +203,8 @@ const artData = [
     style: 'Surrealism',
     location: 'MOMA',
     artist_id: 15,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg'
 },
 {
 
@@ -213,7 +214,8 @@ const artData = [
     style: 'Pop Art',
     location: 'MOMA',
     artist_id: 16,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/en/d/df/Roy_Lichtenstein_Drowning_Girl.jpg'
 },
 {
 
@@ -234,7 +236,8 @@ const artData = [
     style: 'Renaissance',
     location: 'National Gallery of Art, London',
     artist_id: 7,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Leonardo_da_Vinci_Virgin_of_the_Rocks_%28National_Gallery_London%29.jpg/1280px-Leonardo_da_Vinci_Virgin_of_the_Rocks_%28National_Gallery_London%29.jpg'
 },
 {
 
@@ -244,7 +247,8 @@ const artData = [
     style: 'Dutch Golden Age',
     location: 'National Gallery of Art, London',
     artist_id: 11,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Rembrandt%2C_Self_Portrait_at_the_Age_of_34.jpg/1920px-Rembrandt%2C_Self_Portrait_at_the_Age_of_34.jpg'
 },
 {
 
@@ -254,7 +258,8 @@ const artData = [
     style: 'Northern Renaissance',
     location: 'National Gallery of Art, London',
     artist_id: 18,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Van_Eyck_-_Arnolfini_Portrait.jpg/1920px-Van_Eyck_-_Arnolfini_Portrait.jpg'
 },
 {
 
@@ -264,7 +269,8 @@ const artData = [
     style: 'Romanticism',
     location: 'National Gallery of Art, London',
     artist_id: 19,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/2560px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg'
 },
 {
 
@@ -274,7 +280,8 @@ const artData = [
     style: 'Cubism, Surrealism',
     location:'Museo Reina Sofia, Madrid, Spain',
     artist_id: 14,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/GUERNICA.jpg'
 },
 {
 
@@ -284,7 +291,8 @@ const artData = [
     style: 'Renaissance',
     location: 'Galleria dell Accademia, Florence, Italy',
     artist_id: 20,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Michelangelo%27s_David_2015.jpg/1280px-Michelangelo%27s_David_2015.jpg'
 },
 {
 
@@ -294,7 +302,8 @@ const artData = [
     style: 'Renaissance',
     location: 'Uffizi, Florence, Italy',
     artist_id: 21,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/2560px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg'
 },
 {
 
@@ -304,17 +313,19 @@ const artData = [
     style: 'Renaissance',
     location: 'Vatican Museum, Rome, Italy',
     artist_id: 22,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/2560px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg'
 },
 {
 
-    title: 'Judith and Holofernes',
+    title: 'Judith slaying Holofernes',
     medium: 'oil on canvas',
-    date: '1612',
+    date: '1614',
     style: 'Renaissance',
     location: 'Museum Capodimonte, Naples, Italy',
     artist_id: 23,
-    museum_id: 2
+    museum_id: 2,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Judit_decapitando_a_Holofernes%2C_por_Artemisia_Gentileschi.jpg/1920px-Judit_decapitando_a_Holofernes%2C_por_Artemisia_Gentileschi.jpg'
 },
 {
 
@@ -324,17 +335,19 @@ const artData = [
     style: 'Accademic',
     location: 'Clark Art Institute, Williamstown, MA',
     artist_id: 24,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/William-Adolphe_Bouguereau_%281825-1905%29_-_Nymphs_and_Satyr_%281873%29_HQ.jpg/1920px-William-Adolphe_Bouguereau_%281825-1905%29_-_Nymphs_and_Satyr_%281873%29_HQ.jpg'
 },
 {
 
-    title: 'The Migration gained in momentum',
+    title: 'The Migration Panel 1',
     medium: 'casein tempura on hardboard',
     date: '1940',
     style: 'Harlem Renaissance',
     location: 'MOMA',
     artist_id: 25,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/en/0/02/Migration_Series_Panel_1.jpg'
 },
 {
 
@@ -344,7 +357,8 @@ const artData = [
     style: 'Realist',
     location: 'MOMA',
     artist_id: 13,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/en/e/e3/Edward_Hopper_Gas.png'
 },
 {
 
@@ -354,7 +368,8 @@ const artData = [
     style: 'Romanticism',
     location: 'Private Collection',
     artist_id: 26,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Gustave_Courbet_-_Le_D%C3%A9sesp%C3%A9r%C3%A9_%281843%29.jpg'
 },
 {
 
@@ -364,7 +379,8 @@ const artData = [
     style: 'Realism',
     location: 'The Orsay Museum, Paris, France',
     artist_id: 27,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gustave_Caillebotte_-_The_Floor_Planers_-_Google_Art_Project.jpg/2560px-Gustave_Caillebotte_-_The_Floor_Planers_-_Google_Art_Project.jpg'
 },
 {
 
@@ -374,7 +390,8 @@ const artData = [
     style: 'Renaissance',
     location: 'Uffizi, Florence, Italy',
     artist_id: 21,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Botticelli-primavera.jpg/2560px-Botticelli-primavera.jpg'
 },
 {
 
@@ -384,7 +401,8 @@ const artData = [
     style: 'Baroque',
     location: 'Rijksmuseum, Amsterdam, Netherlands',
     artist_id: 11,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Night_Watch_-_HD.jpg/2560px-The_Night_Watch_-_HD.jpg'
 },
 {
 
@@ -394,7 +412,8 @@ const artData = [
     style: 'Dutch Golden Age',
     location: 'Rijksmuseum, Amsterdam, Netherlands',
     artist_id: 28,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1920px-1665_Girl_with_a_Pearl_Earring.jpg'
 },
 {
 
@@ -404,7 +423,8 @@ const artData = [
     style: 'Post-Impressionism',
     location: 'Rijksmuseum, Amsterdam, Netherlands',
     artist_id: 5,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Zelfportret_Rijksmuseum_SK-A-3262.jpeg/1920px-Zelfportret_Rijksmuseum_SK-A-3262.jpeg'
 },
 {
 
@@ -414,7 +434,8 @@ const artData = [
     style: 'Impressionism',
     location: 'Rodin Museum, Paris, France',
     artist_id: 29,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mus%C3%A9e_Rodin_1.jpg/1280px-Mus%C3%A9e_Rodin_1.jpg'
 },
 {
 
@@ -424,7 +445,8 @@ const artData = [
     style: 'Egyptian',
     location: 'Neues Museum, Berlin',
     artist_id: 30,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Nofretete_Neues_Museum.jpg'
 },
 {
 
@@ -434,7 +456,8 @@ const artData = [
     style: 'Realism',
     location: 'The Metropolitain Museum of Art',
     artist_id: 31,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Madame_X_%28Madame_Pierre_Gautreau%29%2C_John_Singer_Sargent%2C_1884_%28unfree_frame_crop%29.jpg/1024px-Madame_X_%28Madame_Pierre_Gautreau%29%2C_John_Singer_Sargent%2C_1884_%28unfree_frame_crop%29.jpg'
 },
 {
 
@@ -444,17 +467,19 @@ const artData = [
     style: 'Baroque',
     location: 'Church of San Domenico Maggiore, Naples',
     artist_id: 32,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Flagellation_of_Christ-Caravaggio_%281607%29.jpg/1920px-The_Flagellation_of_Christ-Caravaggio_%281607%29.jpg'
 },
 {
 
     title: 'Water Lilies',
     medium: 'oil on canvas',
-    date: '1914',
+    date: '1915',
     style: 'Impressionism',
     location: 'MOMA',
     artist_id: 33,
-    museum_id: 3
+    museum_id: 3,
+    image_url: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Claude_Monet_Nympheas_1915_Musee_Marmottan_Paris.jpg'
 },
 ];
 const seedArt = () => Artwork.bulkCreate(artData);
