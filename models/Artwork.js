@@ -48,7 +48,7 @@ Artwork.init(
             }
         },
         image_url: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true
         },
     },
