@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Artwork, Museum, Artist } = require('../models');
-const Sequelize = require('sequelize');
+const sequelize = require('sequelize');
 
 // get all posts
 router.get('/', async (req, res) => {
@@ -11,21 +11,20 @@ router.get('/', async (req, res) => {
         if(req.query.filter) {
             artwork = await Artwork.findAll({
                 where: {
-                    [Sequelize.Op.or]: [
-                        
+                    [sequelize.Op.or]: [
                         {
                             title: {
-                            [Sequelize.Op.like]: `%${req.query.filter}%`
+                            [sequelize.Op.like]: `%${req.query.filter}%`
                             }
                         },
                         {
                             medium: {
-                            [Sequelize.Op.like]: `%${req.query.filter}%`
+                            [sequelize.Op.like]: `%${req.query.filter}%`
                             }
                         },
                         {
                             style: {
-                            [Sequelize.Op.like]: `%${req.query.filter}%`
+                            [sequelize.Op.like]: `%${req.query.filter}%`
                             }
                         }
                     ]
